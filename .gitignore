@@ -60,3 +60,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+Assets/Wwise/Resources/AkWwiseInitializationSettings.asset
+Assets/Wwise/Resources/Mac.asset
+Assets/Wwise/Resources/Mac.asset.meta
+Assets/Wwise/Resources/AkWwiseInitializationSettings.asset
+Assets/Wwise/Resources/AkWwiseInitializationSettings.asset

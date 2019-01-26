@@ -9,7 +9,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	{
 		[SerializeField] float m_MovingTurnSpeed = 360;
 		[SerializeField] float m_StationaryTurnSpeed = 180;
-		[SerializeField] float m_JumpPower = 12f;
 		[Range(1f, 4f)][SerializeField] float m_GravityMultiplier = 2f;
 		[SerializeField] float m_RunCycleLegOffset = 0.2f; //specific to the character in sample assets, will need to be modified to work with others
 		[SerializeField] float m_MoveSpeedMultiplier = 1f;
@@ -43,7 +42,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		}
 
 
-		public void Move(Vector3 move, bool crouch, bool jump)
+		public void Move(Vector3 move)
 		{
 
 			// convert the world relative moveInput vector into a local-relative
@@ -58,62 +57,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 			ApplyExtraTurnRotation();
 
-			// control and velocity handling is different when grounded and airborne:
-			if (m_IsGrounded)
-			{
-				HandleGroundedMovement(crouch, jump);
-			}
-			else
-			{
-				HandleAirborneMovement();
-			}
-
-			ScaleCapsuleForCrouching(crouch);
-			PreventStandingInLowHeadroom();
-
 			// send input and other state parameters to the animator
 			UpdateAnimator(move);
 		}
-
-
-		void ScaleCapsuleForCrouching(bool crouch)
-		{
-			if (m_IsGrounded && crouch)
-			{
-				if (m_Crouching) return;
-				m_Capsule.height = m_Capsule.height / 2f;
-				m_Capsule.center = m_Capsule.center / 2f;
-				m_Crouching = true;
-			}
-			else
-			{
-				Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
-				float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
-				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
-				{
-					m_Crouching = true;
-					return;
-				}
-				m_Capsule.height = m_CapsuleHeight;
-				m_Capsule.center = m_CapsuleCenter;
-				m_Crouching = false;
-			}
-		}
-
-		void PreventStandingInLowHeadroom()
-		{
-			// prevent standing up in crouch-only zones
-			if (!m_Crouching)
-			{
-				Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
-				float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
-				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
-				{
-					m_Crouching = true;
-				}
-			}
-		}
-
 
 		void UpdateAnimator(Vector3 move)
 		{
@@ -160,20 +106,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			m_Rigidbody.AddForce(extraGravityForce);
 
 			m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
-		}
-
-
-		void HandleGroundedMovement(bool crouch, bool jump)
-		{
-			// check whether conditions are right to allow a jump:
-			if (jump && !crouch && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
-			{
-				// jump!
-				m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
-				m_IsGrounded = false;
-				m_Animator.applyRootMotion = false;
-				m_GroundCheckDistance = 0.1f;
-			}
 		}
 
 		void ApplyExtraTurnRotation()
