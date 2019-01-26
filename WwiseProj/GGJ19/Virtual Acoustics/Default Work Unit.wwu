@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C69FAAA5-5DE3-4A77-8E2F-A86FC340332D}" SchemaVersion="89">
+	<VirtualAcoustics>
+		<WorkUnit Name="Default Work Unit" ID="{C69FAAA5-5DE3-4A77-8E2F-A86FC340332D}" PersistMode="Standalone"/>
+	</VirtualAcoustics>
+</WwiseDocument>
