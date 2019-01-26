@@ -103,7 +103,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435285935}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0.00000028088027}
   m_LocalPosition: {x: -52.087055, y: 2.96, z: -21.134287}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -112,7 +112,7 @@ Transform:
   - {fileID: 397327188}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179.99998, z: 0}
 --- !u!54 &435285938
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -219,7 +219,6 @@ GameObject:
   m_Component:
   - component: {fileID: 656899421}
   - component: {fileID: 656899423}
-  - component: {fileID: 656899422}
   m_Layer: 0
   m_Name: MapCamera
   m_TagString: Untagged
@@ -283,14 +282,6 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &656899422
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656899420}
-  m_Enabled: 1
 --- !u!1 &771907680
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,7 +347,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
