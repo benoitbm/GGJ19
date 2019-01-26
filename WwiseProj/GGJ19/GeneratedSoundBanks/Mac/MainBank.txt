@@ -1,0 +1,55 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1135412339	Movement_Step			\Default Work Unit\Movement_Step	
+	2625436021	TakePhone_Out			\Default Work Unit\TakePhone_Out	
+	3848997754	TakePhone_In			\Default Work Unit\TakePhone_In	
+	3908818592	Ambience_Start			\Default Work Unit\Ambience_Start	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2337050305	Battery_Life			\Default Work Unit\Battery_Life	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3411922	Movement_Coat_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_02_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_02		24104
+	9693878	Footstep_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Footstep\Footstep_04_95BC263D.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_04		16188
+	20484929	Scuff_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Scuff\Scuff_03_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_03		18496
+	27331513	Takeout_Foley_Low_Out_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Low_Out_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_Low_Out\Takeout_Foley_Low_Out_02		42064
+	28809976	Footstep_05	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Footstep\Footstep_05_F0004F35.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_05		16268
+	57562108	Takeout_Foley_Zippers_In_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Zippers_In_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_In_03		36064
+	60911491	Takeout_Foley_Zippers_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Zippers_Out_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_Out_03		45064
+	69264397	Takeout_Foley_High_In_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_In_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_01		30064
+	102418887	Takeout_Foley_Zippers_In_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Zippers_In_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_In_02		36064
+	104865149	Scuff_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Scuff\Scuff_04_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_04		16448
+	140449848	Takeout_Foley_High_In_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_In_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_02		36064
+	158764444	Takeout_Foley_Low_In_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Low_In_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_Low_In\Takeout_Foley_Low_In_02		36064
+	175987558	Movement_Coat_06	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_06_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_06		24104
+	184525560	Movement_Coat_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_03_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_03		24104
+	198521359	Takeout_Foley_Low_In_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Low_In_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_Low_In\Takeout_Foley_Low_In_01		30064
+	260109500	Takeout_Foley_Zippers_Out_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Zippers_Out_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_Out_02		42064
+	268633187	Takeout_Foley_Low_In_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Low_In_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_Low_In\Takeout_Foley_Low_In_03		36064
+	285635670	Takeout_Foley_High_Out_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_Out_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_02		42064
+	298774365	Footstep_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Footstep\Footstep_02_FA677612.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_02		13170
+	299625638	TakePhone_Electronic_Out	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\TakePhone_Electronic_Out_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhone_Electronic_Out\TakePhone_Electronic_Out		21064
+	300213179	Takeout_Foley_High_In_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_In_04_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_04		36064
+	361814129	Movement_Coat_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_04_56D34C19_0C139B2C.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_04		24104
+	463802539	Takeout_Foley_High_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_Out_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_03		45064
+	529941621	Scuff_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Scuff\Scuff_02_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_02		26688
+	553973777	Movement_Coat_07	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_07_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_07		24104
+	593964243	Ambience_Street	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Ambience\Ambience_001_8956FC97.wem		\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Street		19264
+	637219140	Takeout_Foley_High_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_Out_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_01		33064
+	647204295	Scuff_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Scuff\Scuff_01_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_01		24640
+	655201480	Takeout_Foley_Low_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Low_Out_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_Low_Out\Takeout_Foley_Low_Out_01		33064
+	658942025	Takeout_Foley_Low_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Low_Out_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_Low_Out\Takeout_Foley_Low_Out_03		45064
+	666378983	Footstep_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Footstep\Footstep_01_F6E3D277.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_01		12420
+	684878441	Takeout_Foley_High_In_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_In_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_03		36064
+	719628359	Takeout_Foley_Zippers_In_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Zippers_In_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_In_01		30064
+	813834047	Takeout_Foley_High_Out_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_Out_04_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_04		45060
+	824954221	Footstep_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Footstep\Footstep_03_871A7055.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_03		15696
+	861144090	Takeout_Foley_Zippers_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Zippers_Out_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_Out_01		33064
+	913082607	TakePhone_Electronic_In	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\TakePhone_Electronic_In_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhone_Electronic_In\TakePhone_Electronic_In		21064
+	944530627	Movement_Coat_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_01_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_01		24064
+	1009321535	Footstep_07	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Footstep\Footstep_07_4594ADCE.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_07		17136
+	1011616082	Footstep_06	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Footstep\Footstep_06_87F48161.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_06		13900
+	1033674219	Movement_Coat_05	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_05_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_05		24104
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	593964243	Ambience_Street	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Ambience\Ambience_001_8956FC97.wem	593964243.wem	\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Street	
+
