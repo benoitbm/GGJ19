@@ -3,15 +3,50 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{733A4483-F308-4295-95CF-9BFEF43AFA65}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Test_SFX" ID="{6F5E5B63-4A80-43E4-B5AD-A71112BBF5D8}">
+				<Event Name="Ambience_Start" ID="{85AF38E9-CE85-4168-B5DE-3ACFF0F936AE}">
 					<ChildrenList>
-						<Action Name="" ID="{EE65D7B0-C9AA-461C-9A42-8C932238D9C5}" ShortID="875587841">
+						<Action Name="" ID="{5F181672-F8F7-485F-87DF-4B36645F2FBB}" ShortID="511601379">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CONFIRM 01" ID="{0140E852-B3C6-4BC7-9A6C-119EB61BC4E9}" WorkUnitID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}"/>
+									<ObjectRef Name="Ambience_Street" ID="{172580B0-3FD3-47A6-96CC-2E53B383FAAB}" WorkUnitID="{41B06626-DA27-486E-AF1E-DA1F0F0FEA93}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Movement_Step" ID="{AEDD1569-393C-447A-8378-9B025847957B}">
+					<ChildrenList>
+						<Action Name="" ID="{D8D70FC0-186F-4C04-8B9A-0F1ACB61B1AC}" ShortID="415541775">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Body" ID="{4497903C-4BCD-4156-8F97-73472A167355}" WorkUnitID="{053159BE-8AC4-410A-B83F-90BBEC232011}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{09AA7436-3020-4257-AA73-31599C1DE6E3}" ShortID="862888874">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Footsetp" ID="{B7C2002B-5C2C-4830-BD19-378036B018BF}" WorkUnitID="{053159BE-8AC4-410A-B83F-90BBEC232011}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3F57DB61-BBDF-4563-8992-F419DBEBE099}" ShortID="1002322414">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_Scuff" ID="{4035A28D-D08F-4752-A819-A78191453205}" WorkUnitID="{053159BE-8AC4-410A-B83F-90BBEC232011}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
