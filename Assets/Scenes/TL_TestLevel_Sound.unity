@@ -277,7 +277,7 @@ MonoBehaviour:
   useOtherObject: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0521087b9492a22488dbbcc8a645e7c3,
+    WwiseObjectReference: {fileID: 11400000, guid: b196e27fe56d4644dae5fa5de5ccc938,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   enableActionOnEvent: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: b388a057ddd99804886b228de6a211e2,
+    WwiseObjectReference: {fileID: 11400000, guid: 62a281f368afa4d4d885c03f0da6e0c2,
       type: 2}
   m_callbackData: {fileID: 0}
   playingId: 0

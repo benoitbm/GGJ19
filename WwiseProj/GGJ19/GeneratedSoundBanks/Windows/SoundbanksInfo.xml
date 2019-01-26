@@ -8,7 +8,12 @@
 		<ExternalSourcesOutputRoot>D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="593964243" Language="SFX">
+			<ShortName>Ambience\Ambience_001.wav</ShortName>
+			<Path>SFX\Ambience\Ambience_001_8956FC97.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX">
@@ -16,13 +21,186 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3291379323" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\TestBank</ObjectPath>
-			<ShortName>TestBank</ShortName>
-			<Path>TestBank.bnk</Path>
+		<SoundBank Id="2880737896" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
+			<ShortName>MainBank</ShortName>
+			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3712553433" Name="Test_SFX" ObjectPath="\Events\Default Work Unit\Test_SFX"/>
+				<Event Id="3908818592" Name="Ambience_Start" ObjectPath="\Events\Default Work Unit\Ambience_Start"/>
+				<Event Id="1135412339" Name="Movement_Step" ObjectPath="\Events\Default Work Unit\Movement_Step"/>
+				<Event Id="3848997754" Name="TakePhone_In" ObjectPath="\Events\Default Work Unit\TakePhone_In"/>
+				<Event Id="2625436021" Name="TakePhone_Out" ObjectPath="\Events\Default Work Unit\TakePhone_Out"/>
 			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="593964243"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="3411922" Language="SFX">
+					<ShortName>Movement\Body\Movement_Coat_02.wav</ShortName>
+					<Path>SFX\Movement\Body\Movement_Coat_02_56D34C19.wem</Path>
+				</File>
+				<File Id="9693878" Language="SFX">
+					<ShortName>Movement\Footstep\Footstep_04.wav</ShortName>
+					<Path>SFX\Movement\Footstep\Footstep_04_95BC263D.wem</Path>
+				</File>
+				<File Id="20484929" Language="SFX">
+					<ShortName>Movement\Scuff\Scuff_03.wav</ShortName>
+					<Path>SFX\Movement\Scuff\Scuff_03_56D34C19_5CCA4701.wem</Path>
+				</File>
+				<File Id="27331513" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Low_Out_02.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Low_Out_02_56D34C19.wem</Path>
+				</File>
+				<File Id="28809976" Language="SFX">
+					<ShortName>Movement\Footstep\Footstep_05.wav</ShortName>
+					<Path>SFX\Movement\Footstep\Footstep_05_F0004F35.wem</Path>
+				</File>
+				<File Id="57562108" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Zippers_In_03.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Zippers_In_03_56D34C19.wem</Path>
+				</File>
+				<File Id="60911491" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Zippers_Out_03.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Zippers_Out_03_56D34C19.wem</Path>
+				</File>
+				<File Id="69264397" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_High_In_01.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_In_01_56D34C19.wem</Path>
+				</File>
+				<File Id="102418887" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Zippers_In_02.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Zippers_In_02_56D34C19.wem</Path>
+				</File>
+				<File Id="104865149" Language="SFX">
+					<ShortName>Movement\Scuff\Scuff_04.wav</ShortName>
+					<Path>SFX\Movement\Scuff\Scuff_04_56D34C19_5CCA4701.wem</Path>
+				</File>
+				<File Id="140449848" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_High_In_02.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_In_02_56D34C19.wem</Path>
+				</File>
+				<File Id="158764444" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Low_In_02.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Low_In_02_56D34C19.wem</Path>
+				</File>
+				<File Id="175987558" Language="SFX">
+					<ShortName>Movement\Body\Movement_Coat_06.wav</ShortName>
+					<Path>SFX\Movement\Body\Movement_Coat_06_56D34C19.wem</Path>
+				</File>
+				<File Id="184525560" Language="SFX">
+					<ShortName>Movement\Body\Movement_Coat_03.wav</ShortName>
+					<Path>SFX\Movement\Body\Movement_Coat_03_56D34C19.wem</Path>
+				</File>
+				<File Id="198521359" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Low_In_01.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Low_In_01_56D34C19.wem</Path>
+				</File>
+				<File Id="260109500" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Zippers_Out_02.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Zippers_Out_02_56D34C19.wem</Path>
+				</File>
+				<File Id="268633187" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Low_In_03.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Low_In_03_56D34C19.wem</Path>
+				</File>
+				<File Id="285635670" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_High_Out_02.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_Out_02_56D34C19.wem</Path>
+				</File>
+				<File Id="298774365" Language="SFX">
+					<ShortName>Movement\Footstep\Footstep_02.wav</ShortName>
+					<Path>SFX\Movement\Footstep\Footstep_02_FA677612.wem</Path>
+				</File>
+				<File Id="299625638" Language="SFX">
+					<ShortName>PhoneSFX\TakePhone_Electronic_Out.wav</ShortName>
+					<Path>SFX\PhoneSFX\TakePhone_Electronic_Out_56D34C19.wem</Path>
+				</File>
+				<File Id="300213179" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_High_In_04.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_In_04_56D34C19.wem</Path>
+				</File>
+				<File Id="361814129" Language="SFX">
+					<ShortName>Movement\Body\Movement_Coat_04.wav</ShortName>
+					<Path>SFX\Movement\Body\Movement_Coat_04_56D34C19_0C139B2C.wem</Path>
+				</File>
+				<File Id="463802539" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_High_Out_03.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_Out_03_56D34C19.wem</Path>
+				</File>
+				<File Id="529941621" Language="SFX">
+					<ShortName>Movement\Scuff\Scuff_02.wav</ShortName>
+					<Path>SFX\Movement\Scuff\Scuff_02_56D34C19_5CCA4701.wem</Path>
+				</File>
+				<File Id="553973777" Language="SFX">
+					<ShortName>Movement\Body\Movement_Coat_07.wav</ShortName>
+					<Path>SFX\Movement\Body\Movement_Coat_07_56D34C19.wem</Path>
+				</File>
+				<File Id="593964243" Language="SFX">
+					<ShortName>Ambience\Ambience_001.wav</ShortName>
+					<Path>SFX\Ambience\Ambience_001_8956FC97.wem</Path>
+					<PrefetchSize>19264</PrefetchSize>
+				</File>
+				<File Id="637219140" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_High_Out_01.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_Out_01_56D34C19.wem</Path>
+				</File>
+				<File Id="647204295" Language="SFX">
+					<ShortName>Movement\Scuff\Scuff_01.wav</ShortName>
+					<Path>SFX\Movement\Scuff\Scuff_01_56D34C19_5CCA4701.wem</Path>
+				</File>
+				<File Id="655201480" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Low_Out_01.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Low_Out_01_56D34C19.wem</Path>
+				</File>
+				<File Id="658942025" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Low_Out_03.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Low_Out_03_56D34C19.wem</Path>
+				</File>
+				<File Id="666378983" Language="SFX">
+					<ShortName>Movement\Footstep\Footstep_01.wav</ShortName>
+					<Path>SFX\Movement\Footstep\Footstep_01_F6E3D277.wem</Path>
+				</File>
+				<File Id="684878441" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_High_In_03.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_In_03_56D34C19.wem</Path>
+				</File>
+				<File Id="719628359" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Zippers_In_01.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Zippers_In_01_56D34C19.wem</Path>
+				</File>
+				<File Id="813834047" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_High_Out_04.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_Out_04_56D34C19.wem</Path>
+				</File>
+				<File Id="824954221" Language="SFX">
+					<ShortName>Movement\Footstep\Footstep_03.wav</ShortName>
+					<Path>SFX\Movement\Footstep\Footstep_03_871A7055.wem</Path>
+				</File>
+				<File Id="861144090" Language="SFX">
+					<ShortName>PhoneSFX\Takeout_Foley_Zippers_Out_01.wav</ShortName>
+					<Path>SFX\PhoneSFX\Takeout_Foley_Zippers_Out_01_56D34C19.wem</Path>
+				</File>
+				<File Id="913082607" Language="SFX">
+					<ShortName>PhoneSFX\TakePhone_Electronic_In.wav</ShortName>
+					<Path>SFX\PhoneSFX\TakePhone_Electronic_In_56D34C19.wem</Path>
+				</File>
+				<File Id="944530627" Language="SFX">
+					<ShortName>Movement\Body\Movement_Coat_01.wav</ShortName>
+					<Path>SFX\Movement\Body\Movement_Coat_01_56D34C19.wem</Path>
+				</File>
+				<File Id="1009321535" Language="SFX">
+					<ShortName>Movement\Footstep\Footstep_07.wav</ShortName>
+					<Path>SFX\Movement\Footstep\Footstep_07_4594ADCE.wem</Path>
+				</File>
+				<File Id="1011616082" Language="SFX">
+					<ShortName>Movement\Footstep\Footstep_06.wav</ShortName>
+					<Path>SFX\Movement\Footstep\Footstep_06_87F48161.wem</Path>
+				</File>
+				<File Id="1033674219" Language="SFX">
+					<ShortName>Movement\Body\Movement_Coat_05.wav</ShortName>
+					<Path>SFX\Movement\Body\Movement_Coat_05_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
