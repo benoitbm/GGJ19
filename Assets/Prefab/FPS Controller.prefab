@@ -173,14 +173,14 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0
+        time: 64.5
         value: 1
-        inSlope: 0
-        outSlope: 0
+        inSlope: -0.00006166003
+        outSlope: -0.00006166003
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 1
       - serializedVersion: 3
         time: 90
         value: 0
@@ -266,7 +266,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.4
+  orthographic size: 25
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
