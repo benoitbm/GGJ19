@@ -22,6 +22,19 @@
 						<Action Name="" ID="{D8D70FC0-186F-4C04-8B9A-0F1ACB61B1AC}" ShortID="415541775">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.08">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FC5A74FB-039D-4613-85BD-70CF9F9DFF7F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.02"/>
+													<Property Name="Min" Type="Real64" Value="-0.01"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -32,7 +45,7 @@
 						<Action Name="" ID="{09AA7436-3020-4257-AA73-31599C1DE6E3}" ShortID="862888874">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="Delay" Type="Real64" Value="0.1"/>
+								<Property Name="Delay" Type="Real64" Value="0.08"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -47,6 +60,78 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Movement_Scuff" ID="{4035A28D-D08F-4752-A819-A78191453205}" WorkUnitID="{053159BE-8AC4-410A-B83F-90BBEC232011}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TakePhone_Out" ID="{B7802875-4D9B-4A60-A893-6A2978C89CE1}">
+					<ChildrenList>
+						<Action Name="" ID="{A5D73A93-DF0D-4E36-8757-52BFDED03960}" ShortID="339750008">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TakePhoneOut" ID="{4182D575-ED76-4409-B5A3-D6E2BF7BCC7B}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F1FCB726-D30D-4BC4-8168-E0BDEE99D8D2}" ShortID="19191012">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Takeout_Folley_Zipper" ID="{D567972B-B9FC-4088-8663-A36C1A34593E}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9F589A30-FFFF-4663-9C6D-0E0BB737DD49}" ShortID="178334254">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.25"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TakePhone_Electronic_Out" ID="{9A40D4DF-609B-4F28-8B00-C1E3A80A71C6}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="TakePhone_In" ID="{E8AF52DB-1351-435B-AC63-D601D4421DAA}">
+					<ChildrenList>
+						<Action Name="" ID="{A45781D2-1929-42ED-8436-B149FEFD7453}" ShortID="1031783655">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.25"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TakePhoneIn" ID="{3F3D5446-2E5E-48B2-8C42-ACDA0C1E1B6C}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{647726B5-A635-4B6A-9AFD-BB4AB1F9C1D4}" ShortID="59560177">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Takeout_Folley_Zipper" ID="{D567972B-B9FC-4088-8663-A36C1A34593E}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AE1FF557-A4CF-432A-9A44-FC3E94C7F537}" ShortID="51361813">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TakePhone_Electronic_In" ID="{82E8365C-FAC7-4D84-9785-92BEE3E016F3}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

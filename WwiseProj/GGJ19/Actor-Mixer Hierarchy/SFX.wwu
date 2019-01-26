@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="SFX" ID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="SFX_Master" ID="{9F88C6D3-0596-4CF7-A83E-6127B351D3A1}" ShortID="65027324">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="PhoneIteractions" ID="{36A18D4C-D947-458B-B1E3-0937856F0C5A}" ShortID="536837759">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="TakePhone_Electronic_Out" ID="{9A40D4DF-609B-4F28-8B00-C1E3A80A71C6}" ShortID="438852278">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TakePhone_Electronic_Out" ID="{AF2B4CA8-6DD9-4A18-AF9F-FA4DA162B1F8}" ShortID="887242198">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" ShortID="299625638">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\TakePhone_Electronic_Out.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<BlendContainer Name="TakePhoneOut" ID="{4182D575-ED76-4409-B5A3-D6E2BF7BCC7B}" ShortID="52819556">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Takeout_Folley_Low_Out" ID="{5C8D56EC-A350-485D-87AB-7167BFAA9B21}" ShortID="918670398">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Takeout_Foley_Low_Out_02" ID="{B617DD96-4ADB-481B-B098-B83505103887}" ShortID="888990429">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_Low_Out_02" ID="{F54D632E-D3A7-484F-A47D-EE9E71E01CE5}" ShortID="27331513">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_Low_Out_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_Low_Out_02" ID="{F54D632E-D3A7-484F-A47D-EE9E71E01CE5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_Low_Out_03" ID="{B30206C8-6C85-4C42-9FA1-2C62C40F6CFE}" ShortID="1031172446">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_Low_Out_03" ID="{B791873F-AC84-45A0-BF35-3B49667A3F6C}" ShortID="658942025">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_Low_Out_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_Low_Out_03" ID="{B791873F-AC84-45A0-BF35-3B49667A3F6C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_Low_Out_01" ID="{C6136F8A-B95C-4BE8-9FED-CF7D6788F2CE}" ShortID="432128413">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_Low_Out_01" ID="{7B43A710-3D93-4740-B9A2-78D4878C4DAA}" ShortID="655201480">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_Low_Out_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_Low_Out_01" ID="{7B43A710-3D93-4740-B9A2-78D4878C4DAA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Takeout_Folley_High_Out" ID="{227C3F71-24F6-4912-BEC9-EAFE11DD2483}" ShortID="865328584">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Takeout_Foley_High_Out_02" ID="{0E1CD436-304C-42D9-80C8-5241676E15E6}" ShortID="403022711">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_High_Out_02" ID="{AA1E5830-9F9E-4151-AFC9-A5FFA9874E42}" ShortID="285635670">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_High_Out_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_High_Out_02" ID="{AA1E5830-9F9E-4151-AFC9-A5FFA9874E42}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_High_Out_03" ID="{27C6A4CA-F486-419C-83FE-87E4F577ED20}" ShortID="1055638639">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_High_Out_03" ID="{F12EF8A0-45AA-44C2-9487-D9C6DBA93220}" ShortID="463802539">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_High_Out_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_High_Out_03" ID="{F12EF8A0-45AA-44C2-9487-D9C6DBA93220}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_High_Out_01" ID="{D12E9C08-4441-4A04-B360-C354E82C2C61}" ShortID="717232917">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_High_Out_01" ID="{ACB9DF62-AC00-4F1A-8152-73AFD3814E42}" ShortID="637219140">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_High_Out_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_High_Out_01" ID="{ACB9DF62-AC00-4F1A-8152-73AFD3814E42}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_High_Out_04" ID="{EE4D49AC-E588-40E3-BA7D-3065E0CA08C1}" ShortID="1068199780">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_High_Out_04" ID="{2F0BC647-224C-479C-9F5E-0A3598D0BA3E}" ShortID="813834047">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_High_Out_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_High_Out_04" ID="{2F0BC647-224C-479C-9F5E-0A3598D0BA3E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="TakePhoneIn" ID="{3F3D5446-2E5E-48B2-8C42-ACDA0C1E1B6C}" ShortID="755598343">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Takeout_Folley_Low_In" ID="{0091F906-B481-4438-946E-C59DF3FAC4EB}" ShortID="546484003">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Takeout_Foley_Low_In_03" ID="{02C09DD4-A156-4DA2-B77D-6F14CCA65E0C}" ShortID="934198867">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_Low_In_03" ID="{35108EAD-F3C2-4A61-8D4C-54AC06442E94}" ShortID="268633187">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_Low_In_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_Low_In_03" ID="{35108EAD-F3C2-4A61-8D4C-54AC06442E94}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_Low_In_01" ID="{E20C0D3D-3E2B-4B68-AFAA-D9D59DAD068A}" ShortID="852882757">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_Low_In_01" ID="{B2179069-8EA8-4596-AC97-EF538980B1E0}" ShortID="198521359">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_Low_In_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_Low_In_01" ID="{B2179069-8EA8-4596-AC97-EF538980B1E0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_Low_In_02" ID="{5B3553A2-F43F-4176-AA67-5D1C9AECDA59}" ShortID="590372481">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_Low_In_02" ID="{5F1149C9-2C0F-44D4-B27D-7010497C964E}" ShortID="158764444">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_Low_In_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_Low_In_02" ID="{5F1149C9-2C0F-44D4-B27D-7010497C964E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Takeout_Folley_High_In" ID="{C7F8184D-FD38-4A7C-83C6-640CF929F1AB}" ShortID="213042133">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Takeout_Foley_High_In_02" ID="{E9953510-4550-4E2F-842D-9C037F9B8B2F}" ShortID="312622855">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_High_In_02" ID="{8FDF35FE-B49E-4AEE-9011-C9F01E98E49B}" ShortID="140449848">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_High_In_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_High_In_02" ID="{8FDF35FE-B49E-4AEE-9011-C9F01E98E49B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_High_In_03" ID="{E9B5EA39-8959-491F-B8DD-D2ED7D79DC22}" ShortID="331737753">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_High_In_03" ID="{33493CDB-E346-4B58-841A-D4431829A013}" ShortID="684878441">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_High_In_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_High_In_03" ID="{33493CDB-E346-4B58-841A-D4431829A013}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_High_In_01" ID="{6E3864AF-F150-41C8-9886-31E592892025}" ShortID="218865904">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_High_In_01" ID="{080FCB83-7562-4C53-B08F-B41883D81FAA}" ShortID="69264397">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_High_In_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_High_In_01" ID="{080FCB83-7562-4C53-B08F-B41883D81FAA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Takeout_Foley_High_In_04" ID="{DCF73978-222A-45F9-8FC1-B0C79EBCC478}" ShortID="825281058">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Takeout_Foley_High_In_04" ID="{CCA78E1D-E60F-4FE3-BE7B-6C55806C8203}" ShortID="300213179">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\Takeout_Foley_High_In_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Takeout_Foley_High_In_04" ID="{CCA78E1D-E60F-4FE3-BE7B-6C55806C8203}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<RandomSequenceContainer Name="Takeout_Folley_Zipper" ID="{D567972B-B9FC-4088-8663-A36C1A34593E}" ShortID="705657916">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Takeout_Foley_Zippers_In_03" ID="{56059978-4138-40CB-BC05-84395BFA0EAE}" ShortID="326882893">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Takeout_Foley_Zippers_In_03" ID="{0B6E8D05-330D-4D6A-A906-0E7516D9879D}" ShortID="57562108">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\Takeout_Foley_Zippers_In_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Takeout_Foley_Zippers_In_03" ID="{0B6E8D05-330D-4D6A-A906-0E7516D9879D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Takeout_Foley_Zippers_Out_01" ID="{3D32B5DE-79C1-4F17-82B4-95914BA87F5C}" ShortID="380810175">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Takeout_Foley_Zippers_Out_01" ID="{4E3517EF-9B14-4E91-9602-D32CF6AB5716}" ShortID="861144090">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\Takeout_Foley_Zippers_Out_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Takeout_Foley_Zippers_Out_01" ID="{4E3517EF-9B14-4E91-9602-D32CF6AB5716}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Takeout_Foley_Zippers_Out_02" ID="{CEDA6B88-237F-4990-84C1-7A20877E9554}" ShortID="417333343">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Takeout_Foley_Zippers_Out_02" ID="{395D7FC3-F5EE-44FA-80B2-A6DF665434D3}" ShortID="260109500">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\Takeout_Foley_Zippers_Out_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Takeout_Foley_Zippers_Out_02" ID="{395D7FC3-F5EE-44FA-80B2-A6DF665434D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Takeout_Foley_Zippers_Out_03" ID="{0DAEE1C8-A5C1-46E9-AA9B-452F0FB8E80A}" ShortID="873965177">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Takeout_Foley_Zippers_Out_03" ID="{C8049AB1-EAE4-4ABD-878A-C08C4C2E003E}" ShortID="60911491">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\Takeout_Foley_Zippers_Out_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Takeout_Foley_Zippers_Out_03" ID="{C8049AB1-EAE4-4ABD-878A-C08C4C2E003E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Takeout_Foley_Zippers_In_01" ID="{F4AB80D8-12AD-47F9-96A3-DBDF1F9B8525}" ShortID="126152719">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Takeout_Foley_Zippers_In_01" ID="{3FC3E39A-AE22-4FCE-A9EF-E4B07E1B1B4B}" ShortID="719628359">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\Takeout_Foley_Zippers_In_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Takeout_Foley_Zippers_In_01" ID="{3FC3E39A-AE22-4FCE-A9EF-E4B07E1B1B4B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Takeout_Foley_Zippers_In_02" ID="{7859AA61-44DB-40B1-9213-66D9DED7D5EA}" ShortID="704329438">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Takeout_Foley_Zippers_In_02" ID="{A9FDD40A-347F-4704-B2AB-CDDF446AE0D1}" ShortID="102418887">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\Takeout_Foley_Zippers_In_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Takeout_Foley_Zippers_In_02" ID="{A9FDD40A-347F-4704-B2AB-CDDF446AE0D1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="TakePhone_Electronic_In" ID="{82E8365C-FAC7-4D84-9785-92BEE3E016F3}" ShortID="571290085">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TakePhone_Electronic_In" ID="{36B0F1E4-EB24-4B70-8868-E5ACF3CD8123}" ShortID="844822052">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" ShortID="913082607">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\TakePhone_Electronic_In.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
