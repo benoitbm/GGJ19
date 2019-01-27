@@ -9,6 +9,10 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
+		<File Id="560006247" Language="SFX">
+			<ShortName>Car\Car_Loop.wav</ShortName>
+			<Path>SFX\Car\Car_Loop_8956FC97.wem</Path>
+		</File>
 		<File Id="593964243" Language="SFX">
 			<ShortName>Ambience\Ambience_001.wav</ShortName>
 			<Path>SFX\Ambience\Ambience_001_8956FC97.wem</Path>
@@ -27,11 +31,14 @@
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3908818592" Name="Ambience_Start" ObjectPath="\Events\Default Work Unit\Ambience_Start"/>
-				<Event Id="1135412339" Name="Movement_Step" ObjectPath="\Events\Default Work Unit\Movement_Step"/>
+				<Event Id="2744306108" Name="Car_Start" ObjectPath="\Events\Default Work Unit\Car\Car_Start"/>
+				<Event Id="1465464336" Name="Car_Stop" ObjectPath="\Events\Default Work Unit\Car\Car_Stop"/>
+				<Event Id="1471192828" Name="Movement_StepPlayer" ObjectPath="\Events\Default Work Unit\Movement_StepPlayer"/>
 				<Event Id="3848997754" Name="TakePhone_In" ObjectPath="\Events\Default Work Unit\TakePhone_In"/>
 				<Event Id="2625436021" Name="TakePhone_Out" ObjectPath="\Events\Default Work Unit\TakePhone_Out"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
+				<File Id="560006247"/>
 				<File Id="593964243"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
@@ -123,6 +130,10 @@
 					<ShortName>Movement\Body\Movement_Coat_04.wav</ShortName>
 					<Path>SFX\Movement\Body\Movement_Coat_04_56D34C19_0C139B2C.wem</Path>
 				</File>
+				<File Id="370751608" Language="SFX">
+					<ShortName>Car\Car_Start.wav</ShortName>
+					<Path>SFX\Car\Car_Start_85C3E9D3.wem</Path>
+				</File>
 				<File Id="463802539" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_High_Out_03.wav</ShortName>
 					<Path>SFX\PhoneSFX\Takeout_Foley_High_Out_03_56D34C19.wem</Path>
@@ -139,6 +150,10 @@
 					<ShortName>Ambience\Ambience_001.wav</ShortName>
 					<Path>SFX\Ambience\Ambience_001_8956FC97.wem</Path>
 					<PrefetchSize>19264</PrefetchSize>
+				</File>
+				<File Id="636296793" Language="SFX">
+					<ShortName>Car\Car_Stop.wav</ShortName>
+					<Path>SFX\Car\Car_Stop_56D34C19.wem</Path>
 				</File>
 				<File Id="637219140" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_High_Out_01.wav</ShortName>

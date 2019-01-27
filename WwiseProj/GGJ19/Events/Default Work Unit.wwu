@@ -137,6 +137,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Car" ID="{23D87130-765A-4987-8FD0-6B95DA38C98B}" ShortID="1042522421">
+					<ChildrenList>
+						<Event Name="Car_Start" ID="{BD077716-5C3E-407C-AA01-7BE74E12D2D5}">
+							<ChildrenList>
+								<Action Name="" ID="{9A821D65-A10E-4CE6-8C5E-F621C5215356}" ShortID="868617608">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Car_Start" ID="{5604E604-7531-4FB9-91B9-3B20C766B49A}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7C097A95-2F80-464C-B65B-D3B45E1915E6}" ShortID="1018061635">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Car_Loop" ID="{56F9637E-FB20-4C87-927E-5C6FBC3E3891}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Car_Stop" ID="{97CF9CDC-32B8-4EA6-9B2F-642C31C1A7D1}">
+							<ChildrenList>
+								<Action Name="" ID="{65959A31-1907-4077-ADF5-F63E061B3AA1}" ShortID="848400347">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Car_Loop" ID="{56F9637E-FB20-4C87-927E-5C6FBC3E3891}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BEF2E7A2-9AC3-43C0-BE43-1CF8962D77DE}" ShortID="446919656">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Car_Stop" ID="{FC71F6A1-A9FC-4488-8B5D-E16672756C5B}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
