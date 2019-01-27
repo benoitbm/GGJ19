@@ -18,6 +18,8 @@ public class CarPatrol : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.height = 0f;
+        agent.baseOffset = 0;
         AudioMaster.Instance.PlaySound("Car_Start", gameObject);
     }
 

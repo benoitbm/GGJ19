@@ -14,6 +14,14 @@ public class phone : MonoBehaviour
         barFull = 5
     }
 
+    public enum ePhonePlace
+    {
+        inPocket,
+        inHand,
+        zooming,
+        dropped
+    }
+
     bool isHeld = true;
 
     Rigidbody rb;
@@ -23,10 +31,12 @@ public class phone : MonoBehaviour
     [SerializeField] GameObject miniMap;
     [SerializeField] Material[] frontPhoneMat;
     [SerializeField] Renderer frontPhoneRender;
+    [SerializeField] float economyRateInPocket = 5.0f;
     float remainingBattery;
     float maximumBattery;
     phoneState batteryState;
     private bool playOnce = false;
+    ePhonePlace phonePlace = ePhonePlace.inPocket;
     private bool m_InBar = false;
     public bool InBar
     {
@@ -39,6 +49,10 @@ public class phone : MonoBehaviour
     {
         get { return m_playLostBatterySound; }
         set { m_playLostBatterySound = value; }
+    public ePhonePlace PhonePlace
+    {
+        get { return phonePlace; }
+        set { phonePlace = value; }
     }
 
     // Start is called before the first frame update
@@ -71,7 +85,7 @@ public class phone : MonoBehaviour
     {
         if (!m_InBar)
         {
-            remainingBattery -= Time.deltaTime;
+            remainingBattery -= phonePlace == ePhonePlace.inPocket ? Time.deltaTime / economyRateInPocket : Time.deltaTime;
             if (remainingBattery <= 0)
             {
                 remainingBattery = 0;
