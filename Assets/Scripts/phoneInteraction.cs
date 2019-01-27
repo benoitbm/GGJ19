@@ -28,7 +28,7 @@ public class phoneInteraction : MonoBehaviour
         bool cancelZoomPhone = !zoomPhone && (Input.GetKeyUp(KeyCode.Mouse1) || Input.GetAxis("Phone") <= .2f);
         if (Input.GetButtonDown("TogglePhone") && !zoomPhone)
         {
-            phoneInHand = !phoneInHand;
+            phoneInHand = !phoneInHand; //Toggling between in pocket/in hand
 
             if (!phoneInHand)
             {
@@ -36,7 +36,7 @@ public class phoneInteraction : MonoBehaviour
                 stowingPhone = true;
                 playOnece = false;
                 AudioMaster.Instance.PlaySound("TakePhone_In", gameObject);
-                
+                m_Phone.PhonePlace = phone.ePhonePlace.inPocket;
             }
         }
         else if (phoneInHand)
@@ -49,6 +49,8 @@ public class phoneInteraction : MonoBehaviour
                 stowingPhone = false;
                 m_Phone.transform.position = Vector3.Lerp(m_Phone.transform.position, center.position, currentLerpTime);
                 m_Phone.transform.rotation = Quaternion.Lerp(m_Phone.transform.rotation, camera.rotation, currentLerpTime);
+
+                m_Phone.PhonePlace = phone.ePhonePlace.zooming;
             }
             else if (cancelZoomPhone || stowingPhone)
             {
@@ -64,12 +66,15 @@ public class phoneInteraction : MonoBehaviour
 
                 m_Phone.transform.position = Vector3.Lerp(m_Phone.transform.position, inHandPos.position, currentLerpTime);
                 m_Phone.transform.rotation = Quaternion.Lerp(m_Phone.transform.rotation, inHandPos.rotation, currentLerpTime);
+
+                m_Phone.PhonePlace = phone.ePhonePlace.inHand;
             }
         }
         else
         {
             m_Phone.transform.localPosition = Vector3.Lerp(m_Phone.transform.localPosition, originalPos, currentLerpTime);
             m_Phone.transform.localRotation.eulerAngles.Set(0, 0, 0);
+            m_Phone.PhonePlace = phone.ePhonePlace.inPocket;
         }
 
         currentLerpTime += Time.deltaTime;
