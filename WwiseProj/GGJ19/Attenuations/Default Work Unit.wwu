@@ -5,6 +5,26 @@
 			<ChildrenList>
 				<Attenuation Name="Car" ID="{E6FDA9E1-4297-4A49-BC3C-82E88C399046}" ShortID="272675083">
 					<PropertyList>
+						<Property Name="ConeAttenuation" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ConeHighPassFilterValue" Type="int32">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ConeLowPassFilterValue" Type="int32">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ConeUse" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="RadiusMax" Type="Real64" Value="60"/>
 					</PropertyList>
 					<CurveUsageInfoList>
@@ -19,6 +39,13 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
+											<SegmentShape>Log1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>20.12539</XPos>
+											<YPos>-6.16663</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>60</XPos>
@@ -48,8 +75,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
+											<XPos>30.09405</XPos>
+											<YPos>10</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
 											<XPos>60</XPos>
-											<YPos>100</YPos>
+											<YPos>46</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -57,7 +89,7 @@
 							</CurveUsageInfo>
 						</LowPassFilterUsage>
 						<HighPassFilterUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None">
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
 								<Curve Name="HighPassFilter" ID="{B9E01707-DFDA-4574-A295-58DEB46F6478}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="65537"/>
@@ -69,8 +101,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
+											<XPos>30.09404</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
 											<XPos>60</XPos>
-											<YPos>100</YPos>
+											<YPos>15</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
@@ -86,8 +123,18 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>100</YPos>
+											<YPos>75</YPos>
 											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>14.70219</XPos>
+											<YPos>75.13661</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>30</XPos>
+											<YPos>50</YPos>
+											<Flags>0</Flags>
 										</Point>
 										<Point>
 											<XPos>60</XPos>

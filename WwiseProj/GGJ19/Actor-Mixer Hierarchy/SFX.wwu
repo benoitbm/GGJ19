@@ -23,72 +23,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="TakePhone_Electronic_Out" ID="{9A40D4DF-609B-4F28-8B00-C1E3A80A71C6}" ShortID="438852278">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{3F31C218-DF1F-44FD-A294-21D169AB3A7C}" ShortID="892927685">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{C7FD35E8-9490-48A1-89E9-DB68769E3DFC}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-2400</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-9</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="TakePhone_Electronic_Out" ID="{AF2B4CA8-6DD9-4A18-AF9F-FA4DA162B1F8}" ShortID="887242198">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" ShortID="299625638">
-													<Language>SFX</Language>
-													<AudioFile>PhoneSFX\TakePhone_Electronic_Out.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
 								<BlendContainer Name="TakePhoneOut" ID="{4182D575-ED76-4409-B5A3-D6E2BF7BCC7B}" ShortID="52819556">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -576,17 +510,17 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="TakePhone_Electronic_In" ID="{82E8365C-FAC7-4D84-9785-92BEE3E016F3}" ShortID="571290085">
+								<ActorMixer Name="TakePhone_Electronic" ID="{D84E1554-63C5-4981-A6C5-D64BB8DB733A}" ShortID="91759330">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
 											<RTPCList>
-												<RTPC Name="" ID="{4A11864E-6680-47C4-99CB-43FFCF54F71E}" ShortID="50191461">
+												<RTPC Name="" ID="{B61679DF-5F05-4231-8157-2C5F44A77217}" ShortID="901234102">
 													<ReferenceList>
 														<Reference Name="ControlInput">
 															<ObjectRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
 														</Reference>
 													</ReferenceList>
-													<Curve Name="" ID="{980020B2-9B8C-4B94-A65D-36D3B46FCCD9}">
+													<Curve Name="" ID="{9F36E276-EE93-4FCD-ACD1-DCDABA6DDCBD}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="65537"/>
 														</PropertyList>
@@ -608,8 +542,34 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-8</Value>
 											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{7C6F449C-869D-42EB-B3AC-C55458D6C8AA}" ShortID="886020377">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{73681896-0AA8-43A5-907C-3EB9EB124CDF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>8</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -621,7 +581,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="TakePhone_Electronic_In" ID="{36B0F1E4-EB24-4B70-8868-E5ACF3CD8123}" ShortID="844822052">
+										<RandomSequenceContainer Name="TakePhone_Electronic_Out" ID="{9A40D4DF-609B-4F28-8B00-C1E3A80A71C6}" ShortID="438852278">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
@@ -631,70 +591,64 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" ShortID="913082607">
-													<Language>SFX</Language>
-													<AudioFile>PhoneSFX\TakePhone_Electronic_In.wav</AudioFile>
-												</AudioFileSource>
+												<Sound Name="TakePhone_Electronic_Out" ID="{AF2B4CA8-6DD9-4A18-AF9F-FA4DA162B1F8}" ShortID="887242198">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" ShortID="299625638">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\TakePhone_Electronic_Out.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="TakePhone_Electronic_In" ID="{82E8365C-FAC7-4D84-9785-92BEE3E016F3}" ShortID="571290085">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="TakePhone_Electronic_In" ID="{36B0F1E4-EB24-4B70-8868-E5ACF3CD8123}" ShortID="844822052">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" ShortID="913082607">
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\TakePhone_Electronic_In.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="Car" ID="{701F71C4-4EB0-42D8-9476-1E818E19D9A1}" ShortID="796771637">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{C64AB19E-9B2B-49B7-BA59-8BDF8C4F7A2B}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="600"/>
-													<Property Name="Min" Type="Real64" Value="-600"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Car_Start" ID="{5604E604-7531-4FB9-91B9-3B20C766B49A}" ShortID="964915749">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Car_Start" ID="{EACE8963-85CF-4607-BCB3-A01DC7264E2E}" ShortID="370751608">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="1.09375"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Car\Car_Start.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Car_Start" ID="{EACE8963-85CF-4607-BCB3-A01DC7264E2E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Car_Loop" ID="{56F9637E-FB20-4C87-927E-5C6FBC3E3891}" ShortID="93033334">
+								</ActorMixer>
+								<ActorMixer Name="Zoom" ID="{7DDD5E79-33CB-40FB-8FEA-F1171B456800}" ShortID="304570622">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsStreamingEnabled" Type="bool">
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="RenderEffect0" Type="bool">
 											<ValueList>
 												<Value>True</Value>
 											</ValueList>
@@ -704,39 +658,774 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
 										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Pitch Shifter (Custom)" ID="{51B8D307-EF2A-49D0-9B26-ABC81C5C5880}" ShortID="740407251" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+													<PropertyList>
+														<Property Name="DelayTime" Type="Real32" Value="100"/>
+														<Property Name="Pitch" Type="Real32" Value="500"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
 										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb" ID="{5101EF03-9A30-4E8E-9BA4-9EA99F963576}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Car_Loop" ID="{D108367F-8364-4A7A-88AA-30C85442ACA3}" ShortID="560006247">
-											<Language>SFX</Language>
-											<AudioFile>Car\Car_Loop.wav</AudioFile>
-										</AudioFileSource>
+										<BlendContainer Name="TakePhoneZoomIn" ID="{708C1FD6-4F74-45DB-91C8-A2CD4F365187}" ShortID="478433322">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Takeout_Folley_High_In" ID="{383DEF5D-3DEF-44B8-BCAC-8A3BCBAF95B3}" ShortID="991976565">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Takeout_Foley_High_In_02" ID="{5BD4F3D8-0011-4503-8F08-FE77CF3F253F}" ShortID="724077273">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Takeout_Foley_High_In_02" ID="{62900ED0-103A-40BB-AD02-C144E38CBD00}" ShortID="772325156">
+																	<Language>SFX</Language>
+																	<AudioFile>PhoneSFX\Takeout_Foley_High_In_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Takeout_Foley_High_In_02" ID="{62900ED0-103A-40BB-AD02-C144E38CBD00}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Takeout_Foley_High_In_03" ID="{9FBBAAC9-39AB-4F46-A09C-448D7B6B9833}" ShortID="1066057461">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Takeout_Foley_High_In_03" ID="{DEBB1335-6A73-4744-A969-B6C61E75E13F}" ShortID="728433700">
+																	<PropertyList>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.64473684210526E-03"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>PhoneSFX\Takeout_Foley_High_In_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Takeout_Foley_High_In_03" ID="{DEBB1335-6A73-4744-A969-B6C61E75E13F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Takeout_Foley_High_In_01" ID="{D968DEEC-11A6-4B63-A462-CF5FC7924149}" ShortID="188006144">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Takeout_Foley_High_In_01" ID="{DB917AFB-AA5D-4D65-A38C-A0FF87559D3F}" ShortID="428020126">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.09649122807018E-02"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="3.18667763157895E-02"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>PhoneSFX\Takeout_Foley_High_In_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Takeout_Foley_High_In_01" ID="{DB917AFB-AA5D-4D65-A38C-A0FF87559D3F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Takeout_Foley_High_In_04" ID="{38DA4465-F382-4F59-B849-21B87B2E71D0}" ShortID="208583408">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Takeout_Foley_High_In_04" ID="{E4A276FF-B0D6-4FE2-AEE2-A271F16CEE5B}" ShortID="1000981139">
+																	<Language>SFX</Language>
+																	<AudioFile>PhoneSFX\Takeout_Foley_High_In_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Takeout_Foley_High_In_04" ID="{E4A276FF-B0D6-4FE2-AEE2-A271F16CEE5B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="TakePhoneZoomOut" ID="{39B364D5-CAAB-4F56-A38D-980EF6C07186}" ShortID="490637966">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Takeout_Folley_High_Out" ID="{16AD8B3B-7B43-4147-9709-B234B268268D}" ShortID="877741275">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Takeout_Foley_High_Out_02" ID="{F1451B88-E02A-45AA-ADBD-1AD81D4E57CD}" ShortID="727890921">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Takeout_Foley_High_Out_02" ID="{F96530BB-8B9D-4B49-866E-4C69173EC3FD}" ShortID="553058639">
+																	<Language>SFX</Language>
+																	<AudioFile>PhoneSFX\Takeout_Foley_High_Out_02.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Takeout_Foley_High_Out_02" ID="{F96530BB-8B9D-4B49-866E-4C69173EC3FD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Takeout_Foley_High_Out_03" ID="{9F7C2880-8B98-4102-B01A-58C8109FBDAB}" ShortID="797813044">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Takeout_Foley_High_Out_03" ID="{344BB33E-2305-4683-BAE9-BA10726FBA53}" ShortID="722767430">
+																	<Language>SFX</Language>
+																	<AudioFile>PhoneSFX\Takeout_Foley_High_Out_03.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Takeout_Foley_High_Out_03" ID="{344BB33E-2305-4683-BAE9-BA10726FBA53}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Takeout_Foley_High_Out_01" ID="{FAFF4DE8-29EC-43FD-A658-FA85859F08CA}" ShortID="728374537">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Takeout_Foley_High_Out_01" ID="{81F67241-2300-444C-BEEF-429726EEE316}" ShortID="133795395">
+																	<Language>SFX</Language>
+																	<AudioFile>PhoneSFX\Takeout_Foley_High_Out_01.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Takeout_Foley_High_Out_01" ID="{81F67241-2300-444C-BEEF-429726EEE316}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Takeout_Foley_High_Out_04" ID="{467A1732-713F-4222-9258-03ACD90E57A2}" ShortID="196703122">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Takeout_Foley_High_Out_04" ID="{79BAC59B-36E3-4A09-9764-6D468FD9417C}" ShortID="777493592">
+																	<Language>SFX</Language>
+																	<AudioFile>PhoneSFX\Takeout_Foley_High_Out_04.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Takeout_Foley_High_Out_04" ID="{79BAC59B-36E3-4A09-9764-6D468FD9417C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Car_Loop" ID="{D108367F-8364-4A7A-88AA-30C85442ACA3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Car_Stop" ID="{FC71F6A1-A9FC-4488-8B5D-E16672756C5B}" ShortID="338325354">
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Car" ID="{701F71C4-4EB0-42D8-9476-1E818E19D9A1}" ShortID="796771637">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverridePriority" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C64AB19E-9B2B-49B7-BA59-8BDF8C4F7A2B}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="600"/>
+													<Property Name="Min" Type="Real64" Value="-600"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{EA7C4394-DCA2-4A3A-9189-4FB09F0F0BF0}" ShortID="381392255">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Car_Engine_Pitch" ID="{402B2E3F-D473-4A4F-BA0A-253DAA39D7D3}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{17AF3D3D-B1B6-40B3-BF61-BF7BF1C54E23}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>300</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-300</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+								<Property Name="PriorityDistanceOffset" Type="int16">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Car" ID="{E6FDA9E1-4297-4A49-BC3C-82E88C399046}" WorkUnitID="{31BB25F2-D92F-4E06-B430-3F725F34B4E0}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+								<Reference Name="UserAuxSend1">
+									<ObjectRef Name="Reverb" ID="{5101EF03-9A30-4E8E-9BA4-9EA99F963576}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Car_Start" ID="{A3C665B4-75C3-4E29-ACF6-D83657E0ECB4}" ShortID="914929561">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Car1" ID="{4536DA69-D21F-40AC-8CEF-8DA0C0BE3602}" WorkUnitID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Car_Variation" ID="{2F6158BF-914A-4052-9C7A-10942B98D357}" WorkUnitID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Car_Stop" ID="{D0C96E7D-90E8-426B-9F6E-8925C18DFF53}" ShortID="636296793">
-											<Language>SFX</Language>
-											<AudioFile>Car\Car_Stop.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="Car1_Start" ID="{5604E604-7531-4FB9-91B9-3B20C766B49A}" ShortID="964915749">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Car" ID="{E6FDA9E1-4297-4A49-BC3C-82E88C399046}" WorkUnitID="{31BB25F2-D92F-4E06-B430-3F725F34B4E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Reverb" ID="{5101EF03-9A30-4E8E-9BA4-9EA99F963576}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Car_Start" ID="{EACE8963-85CF-4607-BCB3-A01DC7264E2E}" ShortID="370751608">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.243969298245614"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Car\Car_Start.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Car_Start" ID="{EACE8963-85CF-4607-BCB3-A01DC7264E2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Car3_Start" ID="{1BEBBD16-C211-4009-AED3-03CDDCED640E}" ShortID="160644461">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Car3_Start" ID="{171D6012-578E-421F-BAD8-25EAAEE45896}" ShortID="903343906">
+													<Language>SFX</Language>
+													<AudioFile>Car\Car3_Start.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Car3_Start" ID="{171D6012-578E-421F-BAD8-25EAAEE45896}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Car2_Start" ID="{B22AED41-B0D2-4B06-BDA9-16C8314BCBE6}" ShortID="492743898">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Car2_Start" ID="{A0A413A0-5D31-4AB7-A389-2BD75B94D66C}" ShortID="658561931">
+													<Language>SFX</Language>
+													<AudioFile>Car\Car2_Start.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Car2_Start" ID="{A0A413A0-5D31-4AB7-A389-2BD75B94D66C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Car_Stop" ID="{D0C96E7D-90E8-426B-9F6E-8925C18DFF53}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Car1_Start" ID="{5604E604-7531-4FB9-91B9-3B20C766B49A}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Car3_Start" ID="{1BEBBD16-C211-4009-AED3-03CDDCED640E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Car2_Start" ID="{B22AED41-B0D2-4B06-BDA9-16C8314BCBE6}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Car2" ID="{B33C561B-4BD7-46C8-9949-FEEE4C1B0404}"/>
+												<ItemList>
+													<ItemRef Name="Car2_Start" ID="{B22AED41-B0D2-4B06-BDA9-16C8314BCBE6}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Car1" ID="{4536DA69-D21F-40AC-8CEF-8DA0C0BE3602}"/>
+												<ItemList>
+													<ItemRef Name="Car1_Start" ID="{5604E604-7531-4FB9-91B9-3B20C766B49A}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Car3" ID="{FAF028A0-DC76-4E7A-94F7-4D40203F9256}"/>
+												<ItemList>
+													<ItemRef Name="Car3_Start" ID="{1BEBBD16-C211-4009-AED3-03CDDCED640E}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Car_Loop" ID="{7919DE50-A3AA-4147-B27E-9365FD53089E}" ShortID="332688826">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Car3" ID="{FAF028A0-DC76-4E7A-94F7-4D40203F9256}" WorkUnitID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Car_Variation" ID="{2F6158BF-914A-4052-9C7A-10942B98D357}" WorkUnitID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Car1_Loop" ID="{56F9637E-FB20-4C87-927E-5C6FBC3E3891}" ShortID="93033334">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{27195C22-0E0A-4FC7-B6D3-850E884FA15C}">
+																<PropertyList>
+																	<Property Name="Min" Type="Real64" Value="-600"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Car" ID="{E6FDA9E1-4297-4A49-BC3C-82E88C399046}" WorkUnitID="{31BB25F2-D92F-4E06-B430-3F725F34B4E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Reverb" ID="{5101EF03-9A30-4E8E-9BA4-9EA99F963576}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Car_Loop" ID="{D108367F-8364-4A7A-88AA-30C85442ACA3}" ShortID="560006247">
+													<Language>SFX</Language>
+													<AudioFile>Car\Car_Loop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Car_Loop" ID="{D108367F-8364-4A7A-88AA-30C85442ACA3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Car3_Loop" ID="{5F0F7D7F-6387-40FA-AC57-C1E8E73CB353}" ShortID="119483935">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Car3_Loop" ID="{64C26EE4-820D-4BCF-9525-C7514C83D02E}" ShortID="259234071">
+													<Language>SFX</Language>
+													<AudioFile>Car\Car3_Loop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Car3_Loop" ID="{64C26EE4-820D-4BCF-9525-C7514C83D02E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Car2_Loop" ID="{206470D8-2BBC-4860-AFB5-8E69143EDA5F}" ShortID="717043671">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Car2_Loop" ID="{5CE266A4-59E3-4AC7-9D1E-9E302EE5BA63}" ShortID="698773064">
+													<Language>SFX</Language>
+													<AudioFile>Car\Car2_Loop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Car2_Loop" ID="{5CE266A4-59E3-4AC7-9D1E-9E302EE5BA63}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Car1_Loop" ID="{56F9637E-FB20-4C87-927E-5C6FBC3E3891}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Car3_Loop" ID="{5F0F7D7F-6387-40FA-AC57-C1E8E73CB353}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Car2_Loop" ID="{206470D8-2BBC-4860-AFB5-8E69143EDA5F}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Car2" ID="{B33C561B-4BD7-46C8-9949-FEEE4C1B0404}"/>
+												<ItemList>
+													<ItemRef Name="Car2_Loop" ID="{206470D8-2BBC-4860-AFB5-8E69143EDA5F}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Car1" ID="{4536DA69-D21F-40AC-8CEF-8DA0C0BE3602}"/>
+												<ItemList>
+													<ItemRef Name="Car1_Loop" ID="{56F9637E-FB20-4C87-927E-5C6FBC3E3891}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Car3" ID="{FAF028A0-DC76-4E7A-94F7-4D40203F9256}"/>
+												<ItemList>
+													<ItemRef Name="Car3_Loop" ID="{5F0F7D7F-6387-40FA-AC57-C1E8E73CB353}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Car_Stop" ID="{9730D65D-5BC2-4901-A8F2-A663FD773F63}" ShortID="219989513">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Car1" ID="{4536DA69-D21F-40AC-8CEF-8DA0C0BE3602}" WorkUnitID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Car_Variation" ID="{2F6158BF-914A-4052-9C7A-10942B98D357}" WorkUnitID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Car1_Stop" ID="{FC71F6A1-A9FC-4488-8B5D-E16672756C5B}" ShortID="338325354">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceOffset" Type="int16">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Car" ID="{E6FDA9E1-4297-4A49-BC3C-82E88C399046}" WorkUnitID="{31BB25F2-D92F-4E06-B430-3F725F34B4E0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+												<Reference Name="UserAuxSend1">
+													<ObjectRef Name="Reverb" ID="{5101EF03-9A30-4E8E-9BA4-9EA99F963576}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Car_Stop" ID="{D0C96E7D-90E8-426B-9F6E-8925C18DFF53}" ShortID="636296793">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.123355263157895"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Car\Car_Stop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Car_Stop" ID="{D0C96E7D-90E8-426B-9F6E-8925C18DFF53}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Car3_Stop" ID="{BB1B0752-D1CC-4716-A9E4-E37FCD99F5EE}" ShortID="6434659">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Car3_Stop" ID="{DAD57FF4-8325-41AC-BF88-020AAE842172}" ShortID="522048992">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.40844298245614"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Car\Car3_Stop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Car3_Stop" ID="{DAD57FF4-8325-41AC-BF88-020AAE842172}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Car2_Stop" ID="{D9BE6574-C271-4823-B787-6A0D73A8644A}" ShortID="301080953">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Car2_Stop" ID="{04C36A8C-9347-45A4-ACA7-56007E55DEBC}" ShortID="365946911">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.274453216374268"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.260195906432749"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.62533333333334"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Car\Car2_Stop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Car2_Stop" ID="{04C36A8C-9347-45A4-ACA7-56007E55DEBC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Car3_Stop" ID="{BB1B0752-D1CC-4716-A9E4-E37FCD99F5EE}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Car2_Stop" ID="{D9BE6574-C271-4823-B787-6A0D73A8644A}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Car1_Stop" ID="{FC71F6A1-A9FC-4488-8B5D-E16672756C5B}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Car2" ID="{B33C561B-4BD7-46C8-9949-FEEE4C1B0404}"/>
+												<ItemList>
+													<ItemRef Name="Car2_Stop" ID="{D9BE6574-C271-4823-B787-6A0D73A8644A}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Car1" ID="{4536DA69-D21F-40AC-8CEF-8DA0C0BE3602}"/>
+												<ItemList>
+													<ItemRef Name="Car1_Stop" ID="{FC71F6A1-A9FC-4488-8B5D-E16672756C5B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Car3" ID="{FAF028A0-DC76-4E7A-94F7-4D40203F9256}"/>
+												<ItemList>
+													<ItemRef Name="Car3_Stop" ID="{BB1B0752-D1CC-4716-A9E4-E37FCD99F5EE}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

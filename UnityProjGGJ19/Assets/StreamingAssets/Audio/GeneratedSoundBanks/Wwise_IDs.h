@@ -20,11 +20,31 @@ namespace AK
         static const AkUniqueID MOVEMENT_STEPPLAYER_STOP = 1156346507U;
         static const AkUniqueID TAKEPHONE_IN = 3848997754U;
         static const AkUniqueID TAKEPHONE_OUT = 2625436021U;
+        static const AkUniqueID ZOOMPHONEIN = 2780459649U;
+        static const AkUniqueID ZOOMPHONEOUT = 2055070848U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace CAR_VARIATION
+        {
+            static const AkUniqueID GROUP = 312891615U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CAR1 = 4189504182U;
+                static const AkUniqueID CAR2 = 4189504181U;
+                static const AkUniqueID CAR3 = 4189504180U;
+            } // namespace SWITCH
+        } // namespace CAR_VARIATION
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID BATTERY_LIFE = 2337050305U;
+        static const AkUniqueID CAR_ENGINE_PITCH = 724758105U;
+        static const AkUniqueID CAR_VARIATION = 312891615U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

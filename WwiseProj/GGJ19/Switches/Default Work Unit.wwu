@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}" SchemaVersion="89">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Car_Variation" ID="{2F6158BF-914A-4052-9C7A-10942B98D357}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Car1" ID="{4536DA69-D21F-40AC-8CEF-8DA0C0BE3602}"/>
+						<Switch Name="Car2" ID="{B33C561B-4BD7-46C8-9949-FEEE4C1B0404}"/>
+						<Switch Name="Car3" ID="{FAF028A0-DC76-4E7A-94F7-4D40203F9256}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Car_Variation" ID="{68BDE562-908A-40FA-ACE5-4423E3D589D5}"/>
+						<Curve Name="" ID="{EFE4B220-B191-4D01-A369-EF37B8F30478}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>20</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>30</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

@@ -1,3 +1,11 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	312891615	Car_Variation			\Default Work Unit\Car_Variation	
+
+Switch	ID	Name	Switch Group			Notes
+	4189504180	Car3	Car_Variation			
+	4189504181	Car2	Car_Variation			
+	4189504182	Car1	Car_Variation			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

@@ -16,12 +16,22 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Car_Variation" ID="{68BDE562-908A-40FA-ACE5-4423E3D589D5}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Car_Engine_Pitch" ID="{402B2E3F-D473-4A4F-BA0A-253DAA39D7D3}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}"/>
-							<Value>100</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Car1" ID="{4536DA69-D21F-40AC-8CEF-8DA0C0BE3602}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
