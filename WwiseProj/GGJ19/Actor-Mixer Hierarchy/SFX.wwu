@@ -53,6 +53,11 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -601,6 +606,11 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -632,6 +642,101 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Car" ID="{701F71C4-4EB0-42D8-9476-1E818E19D9A1}" ShortID="796771637">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C64AB19E-9B2B-49B7-BA59-8BDF8C4F7A2B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="600"/>
+													<Property Name="Min" Type="Real64" Value="-600"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Car_Start" ID="{5604E604-7531-4FB9-91B9-3B20C766B49A}" ShortID="964915749">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Car_Start" ID="{EACE8963-85CF-4607-BCB3-A01DC7264E2E}" ShortID="370751608">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.09375"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Car\Car_Start.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Car_Start" ID="{EACE8963-85CF-4607-BCB3-A01DC7264E2E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Car_Loop" ID="{56F9637E-FB20-4C87-927E-5C6FBC3E3891}" ShortID="93033334">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Car_Loop" ID="{D108367F-8364-4A7A-88AA-30C85442ACA3}" ShortID="560006247">
+											<Language>SFX</Language>
+											<AudioFile>Car\Car_Loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Car_Loop" ID="{D108367F-8364-4A7A-88AA-30C85442ACA3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Car_Stop" ID="{FC71F6A1-A9FC-4488-8B5D-E16672756C5B}" ShortID="338325354">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Car_Stop" ID="{D0C96E7D-90E8-426B-9F6E-8925C18DFF53}" ShortID="636296793">
+											<Language>SFX</Language>
+											<AudioFile>Car\Car_Stop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Car_Stop" ID="{D0C96E7D-90E8-426B-9F6E-8925C18DFF53}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

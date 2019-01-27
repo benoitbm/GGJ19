@@ -14,7 +14,9 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE_START = 3908818592U;
-        static const AkUniqueID MOVEMENT_STEP = 1135412339U;
+        static const AkUniqueID CAR_START = 2744306108U;
+        static const AkUniqueID CAR_STOP = 1465464336U;
+        static const AkUniqueID MOVEMENT_STEPPLAYER = 1471192828U;
         static const AkUniqueID TAKEPHONE_IN = 3848997754U;
         static const AkUniqueID TAKEPHONE_OUT = 2625436021U;
     } // namespace EVENTS

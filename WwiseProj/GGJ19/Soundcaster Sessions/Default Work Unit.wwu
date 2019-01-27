@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AED35A2D-3736-4A99-B9E6-D727EA2F3419}" SchemaVersion="89">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{AED35A2D-3736-4A99-B9E6-D727EA2F3419}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AED35A2D-3736-4A99-B9E6-D727EA2F3419}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Caster" ID="{5A3E9F02-EA1C-4B9C-A0B5-9DC58E5DD8A9}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Car_Start" ID="{BD077716-5C3E-407C-AA01-7BE74E12D2D5}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Car_Stop" ID="{97CF9CDC-32B8-4EA6-9B2F-642C31C1A7D1}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

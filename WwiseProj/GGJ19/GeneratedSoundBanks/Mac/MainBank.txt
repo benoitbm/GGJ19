@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1135412339	Movement_Step			\Default Work Unit\Movement_Step	
+	1465464336	Car_Stop			\Default Work Unit\Car\Car_Stop	
+	1471192828	Movement_StepPlayer			\Default Work Unit\Movement_StepPlayer	
 	2625436021	TakePhone_Out			\Default Work Unit\TakePhone_Out	
+	2744306108	Car_Start			\Default Work Unit\Car\Car_Start	
 	3848997754	TakePhone_In			\Default Work Unit\TakePhone_In	
 	3908818592	Ambience_Start			\Default Work Unit\Ambience_Start	
 
@@ -30,10 +32,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	299625638	TakePhone_Electronic_Out	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\TakePhone_Electronic_Out_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhone_Electronic_Out\TakePhone_Electronic_Out		21064
 	300213179	Takeout_Foley_High_In_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_In_04_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_04		36064
 	361814129	Movement_Coat_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_04_56D34C19_0C139B2C.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_04		24104
+	370751608	Car_Start	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Car\Car_Start_85C3E9D3.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Start		480064
 	463802539	Takeout_Foley_High_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_Out_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_03		45064
 	529941621	Scuff_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Scuff\Scuff_02_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_02		26688
 	553973777	Movement_Coat_07	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_07_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_07		24104
 	593964243	Ambience_Street	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Ambience\Ambience_001_8956FC97.wem		\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Street		19264
+	636296793	Car_Stop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Car\Car_Stop_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Stop		768064
 	637219140	Takeout_Foley_High_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_Out_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_01		33064
 	647204295	Scuff_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Scuff\Scuff_01_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_01		24640
 	655201480	Takeout_Foley_Low_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Low_Out_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_Low_Out\Takeout_Foley_Low_Out_01		33064
@@ -51,5 +55,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1033674219	Movement_Coat_05	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_05_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_05		24104
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	560006247	Car_Loop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Car\Car_Loop_8956FC97.wem	560006247.wem	\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Loop	
 	593964243	Ambience_Street	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Ambience\Ambience_001_8956FC97.wem	593964243.wem	\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Street	
 
