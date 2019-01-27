@@ -10,14 +10,30 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Ambience_Start" ID="{85AF38E9-CE85-4168-B5DE-3ACFF0F936AE}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Car_Stop" ID="{97CF9CDC-32B8-4EA6-9B2F-642C31C1A7D1}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BarEnter" ID="{4EE6F5FB-6094-42C1-8A9C-7EAD56790666}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BarLeave" ID="{87AA737D-B3D4-45A4-8D2D-D5FB8F415384}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
+							<Position X="2" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Car_Variation" ID="{68BDE562-908A-40FA-ACE5-4423E3D589D5}"/>
 							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="BarEnter" ID="{877CCB4F-E2FD-499A-9B0B-66961348B101}"/>
+							<Value>91.2442396313364</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Car_Engine_Pitch" ID="{402B2E3F-D473-4A4F-BA0A-253DAA39D7D3}"/>

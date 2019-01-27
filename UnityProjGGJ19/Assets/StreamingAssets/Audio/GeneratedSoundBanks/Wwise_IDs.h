@@ -14,9 +14,12 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE_START = 3908818592U;
+        static const AkUniqueID BARENTER = 97138242U;
+        static const AkUniqueID BARLEAVE = 2192000613U;
         static const AkUniqueID BATTERYDEAD = 1404125486U;
         static const AkUniqueID CAR_START = 2744306108U;
         static const AkUniqueID CAR_STOP = 1465464336U;
+        static const AkUniqueID DRINK = 2201969025U;
         static const AkUniqueID LOSTBATTERYBAR = 1909547277U;
         static const AkUniqueID MOVEMENT_STEPPLAYER = 1471192828U;
         static const AkUniqueID MOVEMENT_STEPPLAYER_STOP = 1156346507U;
@@ -55,6 +58,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BARENTER = 97138242U;
         static const AkUniqueID BATTERY_LIFE = 2337050305U;
         static const AkUniqueID CAR_ENGINE_PITCH = 724758105U;
         static const AkUniqueID CAR_VARIATION = 312891615U;

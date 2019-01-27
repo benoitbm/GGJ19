@@ -25,6 +25,10 @@
 			<ShortName>Car\Car2_Loop.wav</ShortName>
 			<Path>SFX\Car\Car2_Loop_15D3F138.wem</Path>
 		</File>
+		<File Id="741041618" Language="SFX">
+			<ShortName>Ambience\Ambience_Bar.wav</ShortName>
+			<Path>SFX\Ambience\Ambience_Bar_8956FC97_EB13D637.wem</Path>
+		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
@@ -38,10 +42,13 @@
 			<ShortName>MainBank</ShortName>
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3908818592" Name="Ambience_Start" ObjectPath="\Events\Default Work Unit\Ambience_Start"/>
+				<Event Id="3908818592" Name="Ambience_Start" ObjectPath="\Events\Default Work Unit\Ambiences\Ambience_Start"/>
+				<Event Id="97138242" Name="BarEnter" ObjectPath="\Events\Default Work Unit\Ambiences\BarEnter"/>
+				<Event Id="2192000613" Name="BarLeave" ObjectPath="\Events\Default Work Unit\Ambiences\BarLeave" MaxAttenuation="0.000000"/>
 				<Event Id="1404125486" Name="BatteryDead" ObjectPath="\Events\Default Work Unit\Phone\BatteryDead"/>
 				<Event Id="2744306108" Name="Car_Start" ObjectPath="\Events\Default Work Unit\Car\Car_Start" MaxAttenuation="60.000000"/>
 				<Event Id="1465464336" Name="Car_Stop" ObjectPath="\Events\Default Work Unit\Car\Car_Stop" MaxAttenuation="60.000000"/>
+				<Event Id="2201969025" Name="Drink" ObjectPath="\Events\Default Work Unit\Drink"/>
 				<Event Id="1909547277" Name="LostBatteryBar" ObjectPath="\Events\Default Work Unit\Phone\LostBatteryBar"/>
 				<Event Id="1471192828" Name="Movement_StepPlayer" ObjectPath="\Events\Default Work Unit\Movement_StepPlayer"/>
 				<Event Id="1156346507" Name="Movement_StepPlayer_Stop" ObjectPath="\Events\Default Work Unit\Movement_StepPlayer_Stop" MaxAttenuation="0.000000"/>
@@ -55,6 +62,7 @@
 				<File Id="560006247"/>
 				<File Id="593964243"/>
 				<File Id="698773064"/>
+				<File Id="741041618"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
 				<File Id="3411922" Language="SFX">
@@ -81,9 +89,17 @@
 					<ShortName>Movement\Footstep\Footstep_05.wav</ShortName>
 					<Path>SFX\Movement\Footstep\Footstep_05_F0004F35.wem</Path>
 				</File>
+				<File Id="55400140" Language="SFX">
+					<ShortName>Drink\Drink_02.wav</ShortName>
+					<Path>SFX\Drink\Drink_02_CA450AB1.wem</Path>
+				</File>
 				<File Id="57562108" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_Zippers_In_03.wav</ShortName>
 					<Path>SFX\PhoneSFX\Takeout_Foley_Zippers_In_03_56D34C19.wem</Path>
+				</File>
+				<File Id="57830365" Language="SFX">
+					<ShortName>Drink\Drink_01.wav</ShortName>
+					<Path>SFX\Drink\Drink_01_C230265F.wem</Path>
 				</File>
 				<File Id="60911491" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_Zippers_Out_03.wav</ShortName>
@@ -200,6 +216,10 @@
 				<File Id="553973777" Language="SFX">
 					<ShortName>Movement\Body\Movement_Coat_07.wav</ShortName>
 					<Path>SFX\Movement\Body\Movement_Coat_07_56D34C19.wem</Path>
+				</File>
+				<File Id="573993897" Language="SFX">
+					<ShortName>Drink\Drink_03.wav</ShortName>
+					<Path>SFX\Drink\Drink_03_56D34C19.wem</Path>
 				</File>
 				<File Id="593964243" Language="SFX">
 					<ShortName>Ambience\Ambience_001.wav</ShortName>

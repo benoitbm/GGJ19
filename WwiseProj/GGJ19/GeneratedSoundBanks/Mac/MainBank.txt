@@ -1,15 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
+	97138242	BarEnter			\Default Work Unit\Ambiences\BarEnter	
 	1156346507	Movement_StepPlayer_Stop			\Default Work Unit\Movement_StepPlayer_Stop	
 	1404125486	BatteryDead			\Default Work Unit\Phone\BatteryDead	
 	1465464336	Car_Stop			\Default Work Unit\Car\Car_Stop	
 	1471192828	Movement_StepPlayer			\Default Work Unit\Movement_StepPlayer	
 	1909547277	LostBatteryBar			\Default Work Unit\Phone\LostBatteryBar	
 	2055070848	ZoomPhoneOut			\Default Work Unit\Phone\ZoomPhoneOut	
+	2192000613	BarLeave			\Default Work Unit\Ambiences\BarLeave	
+	2201969025	Drink			\Default Work Unit\Drink	
 	2625436021	TakePhone_Out			\Default Work Unit\Phone\TakePhone_Out	
 	2744306108	Car_Start			\Default Work Unit\Car\Car_Start	
 	2780459649	ZoomPhoneIn			\Default Work Unit\Phone\ZoomPhoneIn	
 	3848997754	TakePhone_In			\Default Work Unit\Phone\TakePhone_In	
-	3908818592	Ambience_Start			\Default Work Unit\Ambience_Start	
+	3908818592	Ambience_Start			\Default Work Unit\Ambiences\Ambience_Start	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	312891615	Car_Variation			\Default Work Unit\Car_Variation	
@@ -23,6 +26,7 @@ Switch	ID	Name	Switch Group			Notes
 	2044049779	Dead	Battery_Dead			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	97138242	BarEnter			\Default Work Unit\BarEnter	
 	312891615	Car_Variation			\Default Work Unit\Car_Variation	
 	724758105	Car_Engine_Pitch			\Default Work Unit\Car_Engine_Pitch	
 	2337050305	Battery_Life			\Default Work Unit\Battery_Life	
@@ -37,7 +41,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20484929	Scuff_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Scuff\Scuff_03_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_03		18496
 	27331513	Takeout_Foley_Low_Out_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Low_Out_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_Low_Out\Takeout_Foley_Low_Out_02		42064
 	28809976	Footstep_05	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Footstep\Footstep_05_F0004F35.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_05		16268
+	55400140	Drink_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Drink\Drink_02_CA450AB1.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Drink\Drink_02		384064
 	57562108	Takeout_Foley_Zippers_In_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Zippers_In_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_In_03		36064
+	57830365	Drink_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Drink\Drink_01_C230265F.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Drink\Drink_01		336064
 	60911491	Takeout_Foley_Zippers_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Zippers_Out_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_Out_03		45064
 	69264397	Takeout_Foley_High_In_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_In_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_01		30064
 	102418887	Takeout_Foley_Zippers_In_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_Zippers_In_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_In_02		36064
@@ -67,6 +73,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	529941621	Scuff_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Scuff\Scuff_02_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_02		26688
 	553058639	Takeout_Foley_High_Out_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_Out_02_56D34C19_74A9EEAF.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Zoom\TakePhoneZoomOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_02		53312
 	553973777	Movement_Coat_07	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_07_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_07		24104
+	573993897	Drink_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Drink\Drink_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Drink\Drink_03		432064
 	593964243	Ambience_Street	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Ambience\Ambience_001_8956FC97.wem		\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Street		19264
 	636296793	Car1_Stop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Car\Car_Stop_E6875419.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Stop\Car1_Stop		432064
 	637219140	Takeout_Foley_High_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_Out_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_01		33064
@@ -99,4 +106,5 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	560006247	Car1_Loop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Car\Car_Loop_8956FC97.wem	560006247.wem	\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Loop\Car1_Loop	
 	593964243	Ambience_Street	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Ambience\Ambience_001_8956FC97.wem	593964243.wem	\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Street	
 	698773064	Car2_Loop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Car\Car2_Loop_15D3F138.wem	698773064.wem	\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Loop\Car2_Loop	
+	741041618	Ambience_Bar	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Ambience\Ambience_Bar_8956FC97_EB13D637.wem	741041618.wem	\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Bar	
 

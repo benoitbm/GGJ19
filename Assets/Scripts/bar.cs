@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using Audio_Wwise;
 public class bar : MonoBehaviour
 {
     private UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController p_Player;
@@ -39,6 +39,8 @@ public class bar : MonoBehaviour
             //TODO : Trigger dialog enter
             GetComponent<BoxCollider>().enabled = false;
             StartCoroutine(fadeImage(false));
+            AudioMaster.Instance.PlaySound("BarEnter");
+
 
             //m_UIBar.SetActive(true);
             m_UIBar.GetComponent<bar_UI>().RegisterBar(this);
@@ -51,6 +53,7 @@ public class bar : MonoBehaviour
         p_Player.Drink(Random.Range(alcoholRange.x, alcoholRange.y));
         p_Phone.refillBattery((phone.phoneState)((int)p_Phone.PhoneState + Random.Range(batteryRange.x, batteryRange.y + 1)));
         ++drinksUsed;
+        AudioMaster.Instance.PlaySound("Drink");
         //TODO : Drink reaction
 
         if (--drinksAllowed <= 0)
@@ -60,6 +63,7 @@ public class bar : MonoBehaviour
     public void LeaveBar()
     {
         //TODO : Dialog leave bar (case remaining drinks allowed)
+        AudioMaster.Instance.PlaySound("BarLeave");
         m_UIBar.SetActive(false);
         StartCoroutine(fadeImage(true));
         //Recapture

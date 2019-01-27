@@ -40,6 +40,11 @@ namespace Audio_Wwise
         {
             AkSoundEngine.PostEvent(eventname, passedObject);
         }
+        // Update is called once per frame
+        public void PlaySound(string eventname)
+        {
+            AkSoundEngine.PostEvent(eventname, gameObject);
+        }
         public void SetRTPC(string rtpcName,float value)
         {
             AkSoundEngine.SetRTPCValue(rtpcName, value);

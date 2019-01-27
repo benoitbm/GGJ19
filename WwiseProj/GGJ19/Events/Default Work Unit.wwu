@@ -3,21 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{733A4483-F308-4295-95CF-9BFEF43AFA65}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Ambience_Start" ID="{85AF38E9-CE85-4168-B5DE-3ACFF0F936AE}">
-					<ChildrenList>
-						<Action Name="" ID="{5F181672-F8F7-485F-87DF-4B36645F2FBB}" ShortID="511601379">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ambience_Street" ID="{172580B0-3FD3-47A6-96CC-2E53B383FAAB}" WorkUnitID="{41B06626-DA27-486E-AF1E-DA1F0F0FEA93}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Movement_StepPlayer" ID="{AEDD1569-393C-447A-8378-9B025847957B}">
 					<ChildrenList>
 						<Action Name="" ID="{D8D70FC0-186F-4C04-8B9A-0F1ACB61B1AC}" ShortID="415541775">
@@ -386,6 +371,98 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambiences" ID="{11E9345F-8C4C-404D-85D5-52E2E38FC19A}" ShortID="307581206">
+					<ChildrenList>
+						<Event Name="Ambience_Start" ID="{85AF38E9-CE85-4168-B5DE-3ACFF0F936AE}">
+							<ChildrenList>
+								<Action Name="" ID="{5F181672-F8F7-485F-87DF-4B36645F2FBB}" ShortID="511601379">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_Street" ID="{172580B0-3FD3-47A6-96CC-2E53B383FAAB}" WorkUnitID="{41B06626-DA27-486E-AF1E-DA1F0F0FEA93}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BarEnter" ID="{4EE6F5FB-6094-42C1-8A9C-7EAD56790666}">
+							<ChildrenList>
+								<Action Name="" ID="{81C5749A-367A-453E-987B-20CAAEFA00E2}" ShortID="633835685">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_Bar" ID="{E8296772-C7C9-42D4-97A9-61EDE93FA4C6}" WorkUnitID="{41B06626-DA27-486E-AF1E-DA1F0F0FEA93}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E32F5F81-9B2F-47DA-BF24-375F912ECE50}" ShortID="44044657">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BarEnter" ID="{877CCB4F-E2FD-499A-9B0B-66961348B101}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BarLeave" ID="{87AA737D-B3D4-45A4-8D2D-D5FB8F415384}">
+							<ChildrenList>
+								<Action Name="" ID="{E6F542C0-E275-4ECB-B431-AA4D30C5BFA5}" ShortID="650139892">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="50"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BarEnter" ID="{877CCB4F-E2FD-499A-9B0B-66961348B101}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FBF80DA2-2385-41D4-8B28-70BDE3BE49D4}" ShortID="829480835">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience_Bar" ID="{E8296772-C7C9-42D4-97A9-61EDE93FA4C6}" WorkUnitID="{41B06626-DA27-486E-AF1E-DA1F0F0FEA93}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Drink" ID="{DD0024E8-8FD2-4A91-BE7E-A130CB7F99A6}">
+					<ChildrenList>
+						<Action Name="" ID="{9AC747CA-80A8-43D1-A727-DC4D44097491}" ShortID="716310104">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drink" ID="{63493A61-E487-4E93-B293-4F9B85B6603B}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
