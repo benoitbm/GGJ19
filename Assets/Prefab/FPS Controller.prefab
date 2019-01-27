@@ -168,9 +168,10 @@ GameObject:
   - component: {fileID: 435285936}
   - component: {fileID: 2116741304}
   - component: {fileID: 5159604691362444823}
+  - component: {fileID: 1805542709}
   m_Layer: 0
   m_Name: FPS Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,6 +290,7 @@ MonoBehaviour:
     slowDownRate: 1
     airControl: 0
     shellOffset: 0
+  m_AlcoholEliminationRate: 0.1
 --- !u!114 &2116741304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +321,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footStepSpeed: 0.5
+--- !u!114 &1805542709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435285935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee8ad07bef0246439ad26e53c65a104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  processProfile: {fileID: 11400000, guid: 60189ab46ad7e224380f228868c3601e, type: 2}
+  minValueSightReduced: 8
+  sightLossIntensifier: 10
+  bloomIntensifier: 3
 --- !u!1 &543224005
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,6 +454,7 @@ GameObject:
   - component: {fileID: 771907682}
   - component: {fileID: 771907684}
   - component: {fileID: 771907686}
+  - component: {fileID: 1134653195}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -619,6 +638,19 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1134653195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771907680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 60189ab46ad7e224380f228868c3601e, type: 2}
 --- !u!1 &1044293784
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,6 +860,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ae35c7944763aad4eb5e354bcbc6b8cb, type: 2}
   - {fileID: 2100000, guid: 18583ea20f314114ea2da014205a974c, type: 2}
   frontPhoneRender: {fileID: 1044293786}
+  economyRateInPocket: 5
 --- !u!1 &1976652681
 GameObject:
   m_ObjectHideFlags: 0
