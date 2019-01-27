@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Narrator" ID="{F6BC7C54-1C4A-49C0-96A4-A191E837D9C4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+									<ObjectRef Name="Narrator_Intro" ID="{F6BC7C54-1C4A-49C0-96A4-A191E837D9C4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -9,6 +9,10 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
+		<File Id="241243973" Language="English(US)">
+			<ShortName>Narrator_Intro_01.wav</ShortName>
+			<Path>Voices\English(US)\Narrator_Intro_01_56D34C19.wem</Path>
+		</File>
 		<File Id="259234071" Language="SFX">
 			<ShortName>Car\Car3_Loop.wav</ShortName>
 			<Path>SFX\Car\Car3_Loop_7A45DEA7.wem</Path>
@@ -29,10 +33,6 @@
 			<ShortName>Ambience\Ambience_Bar.wav</ShortName>
 			<Path>SFX\Ambience\Ambience_Bar_8956FC97_EB13D637.wem</Path>
 		</File>
-		<File Id="835019663" Language="English(US)">
-			<ShortName>Narrator_Intro_Clean.wav</ShortName>
-			<Path>Voices\English(US)\Narrator_Intro_Clean_56D34C19.wem</Path>
-		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
@@ -49,7 +49,7 @@
 				<Event Id="4264743395" Name="Narrator_Start" ObjectPath="\Events\VO\Narrator_Start"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
-				<File Id="835019663"/>
+				<File Id="241243973"/>
 			</ReferencedStreamedFiles>
 		</SoundBank>
 		<SoundBank Id="2880737896" Language="SFX">

@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Narrator" ID="{F6BC7C54-1C4A-49C0-96A4-A191E837D9C4}" ShortID="125877377">
+						<Sound Name="Narrator_Intro" ID="{F6BC7C54-1C4A-49C0-96A4-A191E837D9C4}" ShortID="125877377">
 							<PropertyList>
 								<Property Name="IsStreamingEnabled" Type="bool">
 									<ValueList>
@@ -35,11 +35,543 @@
 									<Language>English(US)</Language>
 									<AudioFile>Narrator_Intro_Clean.wav</AudioFile>
 								</AudioFileSource>
+								<AudioFileSource Name="Narrator_Intro_01" ID="{906380A8-0DDA-4E69-9AE0-C59FF21810C6}" ShortID="241243973">
+									<Language>English(US)</Language>
+									<AudioFile>Narrator_Intro_01.wav</AudioFile>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Narrator_Intro_Clean" ID="{73674AAB-B635-46A8-8FCB-4B16E8E58CFA}" Platform="Linked"/>
+								<ActiveSource Name="Narrator_Intro_01" ID="{906380A8-0DDA-4E69-9AE0-C59FF21810C6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<SwitchContainer Name="EnterBar" ID="{76AD1687-949C-4594-BBD6-F598BA2495B0}" ShortID="265104606">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Alive" ID="{F78DF2AC-E571-41DE-BA82-EDF4F368C866}" WorkUnitID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Battery_Dead" ID="{A2565B0D-0267-4EE2-849B-2BD5C142D0E1}" WorkUnitID="{9A5EF7D8-E471-4798-B7EF-FAB707C0E1F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="EnterBar_PhoneDead" ID="{3BBE0B4B-8DC6-4006-A69F-CD7DB94DDC19}" ShortID="1060641749">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Narrator_BarEnterPhoneDead_01" ID="{59D46ECE-8250-4E8F-B6B3-66ACBF8CDFDD}" ShortID="415587925">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Narrator_BarEnterPhoneDead_01" ID="{4FA79A18-8757-4C93-A24A-22E8C0D6C804}" ShortID="581769929">
+													<Language>English(US)</Language>
+													<AudioFile>Narrator_BarEnterPhoneDead_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Narrator_BarEnterPhoneDead_01" ID="{4FA79A18-8757-4C93-A24A-22E8C0D6C804}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="EnterBar" ID="{47C5C7CC-9499-4792-9AE5-E39762AC69E5}" ShortID="866555102">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Narrator_BarEnter_01" ID="{27773595-5FBD-451B-BCA3-61C273B131B6}" ShortID="900820935">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Narrator_BarEnter_01" ID="{4006AA72-A11E-4D82-A7BE-2EF08346A40C}" ShortID="949425456">
+													<Language>English(US)</Language>
+													<AudioFile>Narrator_BarEnter_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Narrator_BarEnter_01" ID="{4006AA72-A11E-4D82-A7BE-2EF08346A40C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Narrator_BarEnter_02" ID="{5B06D553-B277-4EA2-8000-080DFAB4CDD4}" ShortID="270683306">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Narrator_BarEnter_02" ID="{B6276857-E6AF-48FA-B0EB-F12F06BECD8D}" ShortID="739997533">
+													<Language>English(US)</Language>
+													<AudioFile>Narrator_BarEnter_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Narrator_BarEnter_02" ID="{B6276857-E6AF-48FA-B0EB-F12F06BECD8D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Narrator_BarEnter_03" ID="{282D8E3D-CDA9-4D0C-8940-AFE8E0BEC8A3}" ShortID="641727247">
+											<PropertyList>
+												<Property Name="IsVoice" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Narrator_BarEnter_03" ID="{2F0DD319-88B2-4713-BD6C-DE8DF25DB518}" ShortID="320802618">
+													<Language>English(US)</Language>
+													<AudioFile>Narrator_BarEnter_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Narrator_BarEnter_03" ID="{2F0DD319-88B2-4713-BD6C-DE8DF25DB518}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="EnterBar_PhoneDead" ID="{3BBE0B4B-8DC6-4006-A69F-CD7DB94DDC19}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="EnterBar" ID="{47C5C7CC-9499-4792-9AE5-E39762AC69E5}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="Narrator_BatteryDead" ID="{9FD27AF6-D551-484A-AB71-ADC1A647214D}" ShortID="843041586">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Narrator_BatteryDead_01" ID="{1191FFE0-C323-4A8E-B1EC-CED405D8FDC0}" ShortID="337059694">
+									<Language>English(US)</Language>
+									<AudioFile>Narrator_BatteryDead_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Narrator_BatteryDead_01" ID="{1191FFE0-C323-4A8E-B1EC-CED405D8FDC0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="DrinkBig" ID="{4390A6AC-EE7E-44EB-96A0-1BB3B9CC149D}" ShortID="922240757">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Narrator_DrinkBig_01" ID="{C75CA001-B2A4-4A15-917E-F1435013398B}" ShortID="322643107">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_DrinkBig_01" ID="{785091E5-DAA2-4944-9453-A3E5EAC478CF}" ShortID="818299128">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_DrinkBig_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_DrinkBig_01" ID="{785091E5-DAA2-4944-9453-A3E5EAC478CF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Narrator_DrinkBig_02" ID="{D56F4933-583C-4898-9CC3-78D70359CC66}" ShortID="246009315">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_DrinkBig_02" ID="{CA3CAC07-627D-492A-A3AC-8CB5B8444136}" ShortID="651330543">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_DrinkBig_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_DrinkBig_02" ID="{CA3CAC07-627D-492A-A3AC-8CB5B8444136}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Narrator_DrinkBig_03" ID="{CD0AC8ED-DC2D-4B71-81B7-9CBC44FA6F8F}" ShortID="756706185">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_DrinkBig_03" ID="{BA30333C-BC87-416F-AA3E-0433DCC779A2}" ShortID="243394978">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_DrinkBig_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_DrinkBig_03" ID="{BA30333C-BC87-416F-AA3E-0433DCC779A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Narrator_Lose" ID="{A62A84A3-C58B-4DCA-BCD8-C47B7738D56E}" ShortID="492238940">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Narrator_Lose_01" ID="{7AC0EBC2-63E6-40E9-9EBD-CC01161C66DA}" ShortID="900734338">
+									<Language>English(US)</Language>
+									<AudioFile>Narrator_Lose_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Narrator_Lose_01" ID="{7AC0EBC2-63E6-40E9-9EBD-CC01161C66DA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Narrator_Phone Charged" ID="{C44CD3A6-E603-431D-BA8E-9D00CD242A97}" ShortID="184361231">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Narrator_Phone Charged_01" ID="{3E47A447-6520-48EE-906E-A17B151206F9}" ShortID="654934812">
+									<Language>English(US)</Language>
+									<AudioFile>Narrator_Phone Charged_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Narrator_Phone Charged_01" ID="{3E47A447-6520-48EE-906E-A17B151206F9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Narrator_Phone1st" ID="{17F9094E-62CE-4ABD-8557-6B1C7ADFD959}" ShortID="963466296">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Narrator_Phone1_01" ID="{1580C775-52DF-4A9F-952E-1AF429E0BD43}" ShortID="700583483">
+									<Language>English(US)</Language>
+									<AudioFile>Narrator_Phone1_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Narrator_Phone1_01" ID="{1580C775-52DF-4A9F-952E-1AF429E0BD43}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Narrator_PhoneStow1st" ID="{4D75919A-0D4F-4B82-B05B-AC65E7752FE1}" ShortID="200208672">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Narrator_PhoneStow1st_01" ID="{E35EE38A-62EF-4702-BADD-7E01F7313684}" ShortID="228219342">
+									<Language>English(US)</Language>
+									<AudioFile>Narrator_PhoneStow1st_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Narrator_PhoneStow1st_01" ID="{E35EE38A-62EF-4702-BADD-7E01F7313684}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="SmallDrink" ID="{81EDB97A-3394-4D1E-8A42-CD0A45BA46CF}" ShortID="453314799">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Narrator_SmallDrink_01" ID="{FDE912AC-0B8B-4A65-AF96-2A7B24DC2324}" ShortID="125873257">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_SmallDrink_01" ID="{8C36EF9B-CD96-48C4-AE74-64222367E1D0}" ShortID="815504806">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_SmallDrink_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_SmallDrink_01" ID="{8C36EF9B-CD96-48C4-AE74-64222367E1D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Narrator_SmallDrink_02" ID="{BEB9807C-B7AF-4140-A658-914D202079AE}" ShortID="123852994">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_SmallDrink_02" ID="{1365922E-AFC9-45EF-A3D8-BF62B0318C0F}" ShortID="41462748">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_SmallDrink_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_SmallDrink_02" ID="{1365922E-AFC9-45EF-A3D8-BF62B0318C0F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Narrator_SmallDrink_03" ID="{19B04559-89E1-4E5A-9183-B3960FB3B6C7}" ShortID="449623519">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_SmallDrink_03" ID="{7CD23C81-0040-42FC-B9D7-17DC7D74D74B}" ShortID="326884074">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_SmallDrink_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_SmallDrink_03" ID="{7CD23C81-0040-42FC-B9D7-17DC7D74D74B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Narrator_Win" ID="{8BCE8C50-5470-44AC-9EA3-53951F61312B}" ShortID="485673870">
+							<PropertyList>
+								<Property Name="IsVoice" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Narrator_Win_01" ID="{F49B89E2-E27A-4B42-AD7B-290819B0FB72}" ShortID="335034425">
+									<Language>English(US)</Language>
+									<AudioFile>Narrator_Win_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Narrator_Win_01" ID="{F49B89E2-E27A-4B42-AD7B-290819B0FB72}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Wonder" ID="{74CB4517-278C-401D-A7DA-D31714E3F207}" ShortID="820580127">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Narrator_Wonder_01" ID="{8F714069-4FCD-4C1B-9B15-6BE381F68E2A}" ShortID="326962611">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_Wonder_01" ID="{C54AE5DC-6B79-45EA-AFCF-FC9E29090190}" ShortID="359930847">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_Wonder_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_Wonder_01" ID="{C54AE5DC-6B79-45EA-AFCF-FC9E29090190}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Narrator_Wonder_02" ID="{CF562067-53C5-4C56-BDFC-D9579AF612C7}" ShortID="684847880">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_Wonder_02" ID="{C319C245-9A3D-474F-AAEC-31C83694EA1F}" ShortID="335107223">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_Wonder_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_Wonder_02" ID="{C319C245-9A3D-474F-AAEC-31C83694EA1F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Narrator_Wonder_03" ID="{2F1EB92A-2D51-4D41-A0FF-1A377FE3D6BE}" ShortID="41530054">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_Wonder_03" ID="{B33B8AF0-7591-49FD-9841-532ECAD19B14}" ShortID="395791143">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_Wonder_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_Wonder_03" ID="{B33B8AF0-7591-49FD-9841-532ECAD19B14}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Narrator_Wonder_04" ID="{EF708912-A283-4FC9-AE0A-4859D83290CD}" ShortID="545899140">
+									<PropertyList>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Narrator_Wonder_04" ID="{F5893491-89EA-45B9-AB78-65A8EBE41040}" ShortID="368912641">
+											<Language>English(US)</Language>
+											<AudioFile>Narrator_Wonder_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Narrator_Wonder_04" ID="{F5893491-89EA-45B9-AB78-65A8EBE41040}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
