@@ -17,7 +17,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Movement_Step" ID="{AEDD1569-393C-447A-8378-9B025847957B}">
+				<Event Name="Movement_StepPlayer" ID="{AEDD1569-393C-447A-8378-9B025847957B}">
 					<ChildrenList>
 						<Action Name="" ID="{D8D70FC0-186F-4C04-8B9A-0F1ACB61B1AC}" ShortID="415541775">
 							<PropertyList>
