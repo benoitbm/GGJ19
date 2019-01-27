@@ -26,6 +26,13 @@ public class phone : MonoBehaviour
     float remainingBattery;
     float maximumBattery;
     phoneState batteryState;
+    private bool m_InBar = false;
+
+    public bool InBar
+    {
+        get { return m_InBar; }
+        set { m_InBar = value; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -55,25 +62,28 @@ public class phone : MonoBehaviour
 
     private void LateUpdate()
     {
-        remainingBattery -= Time.deltaTime;
-        if (remainingBattery <= 0)
+        if (!m_InBar)
         {
-            remainingBattery = 0;
-            batteryState = phoneState.empty;
-            miniMap.SetActive(false);
+            remainingBattery -= Time.deltaTime;
+            if (remainingBattery <= 0)
+            {
+                remainingBattery = 0;
+                batteryState = phoneState.empty;
+                miniMap.SetActive(false);
+            }
+            else
+            {
+                batteryState = (phoneState)Mathf.CeilToInt(remainingBattery / secondsPerBar);
+                miniMap.SetActive(true);
+            }
+            frontPhoneRender.material = frontPhoneMat[(int)batteryState];
         }
-        else
-        {
-            batteryState = (phoneState)Mathf.CeilToInt(remainingBattery / secondsPerBar);
-            miniMap.SetActive(true);
-        }
-        frontPhoneRender.material = frontPhoneMat[(int)batteryState];
     }
 
     public bool Hold
     {
         get { return isHeld; }
-        set { isHeld = Hold; }
+        set { isHeld = value; }
     }
 
     public float Battery
@@ -88,6 +98,10 @@ public class phone : MonoBehaviour
 
     public void refillBattery(phoneState state = phoneState.barFull)
     {
-        remainingBattery = (float)(state) * secondsPerBar;
+        if (state >= phoneState.barFull)
+            state = phoneState.barFull;
+
+        batteryState = state;
+        remainingBattery = (float)(batteryState) * secondsPerBar;
     }
 }
