@@ -550,6 +550,9 @@ GameObject:
   - component: {fileID: 434564}
   - component: {fileID: 3376028}
   - component: {fileID: 2353164}
+  - component: {fileID: 2294878822888336416}
+  - component: {fileID: 5811248549919717685}
+  - component: {fileID: 2561053630852383400}
   m_Layer: 0
   m_Name: SM_Veh_Car_Police_01
   m_TagString: Untagged
@@ -624,6 +627,55 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2294878822888336416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc8a0d9594d6c5479ef4ed15b5fdd71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carHit: 0
+--- !u!114 &5811248549919717685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ac4efa5cebf5a4cbc181357d6791bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  player: {fileID: 0}
+--- !u!195 &2561053630852383400
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189930}
+  m_Enabled: 1
+  m_AgentTypeID: -334000983
+  m_Radius: 2.7793117
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 3.482398
+  m_BaseOffset: 1.741199
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &196098
 GameObject:
   m_ObjectHideFlags: 0
