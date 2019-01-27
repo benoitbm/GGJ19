@@ -73,7 +73,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] float m_AlcoholEliminationRate = .1f;
         private bool m_InBar = false;
 
-
         public Vector3 Velocity
         {
             get { return m_RigidBody.velocity; }
@@ -94,6 +93,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
         }
 
+        public float AlcoholLevel
+        {
+            get { return m_AlcoholLevel; }
+        }
+
         public void Drink(float amount)
         {
             m_AlcoholLevel += amount;
@@ -110,7 +114,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void LateUpdate()
         {
             if (!m_InBar)
+            {
                 m_AlcoholLevel -= Time.deltaTime / 1000.0f * m_AlcoholEliminationRate;
+            }
         }
 
         private void Update()

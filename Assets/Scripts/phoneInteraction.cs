@@ -24,6 +24,24 @@ public class phoneInteraction : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        if(m_Phone.playLostBatterySound)
+        {
+            if(phoneInHand)
+            {
+                if(m_Phone.PhoneState == phone.phoneState.empty)
+                {
+                    AudioMaster.Instance.PlaySound("BatteryDead", gameObject);
+                }
+                else
+                {
+                    AudioMaster.Instance.PlaySound("LostBatteryBar", gameObject);
+                }
+                m_Phone.playLostBatterySound = false;
+                //ToDo Vibration ?
+            }
+        }
+
+
         bool zoomPhone = Input.GetKey(KeyCode.Mouse1) || Input.GetAxis("Phone") > .2f;
         bool cancelZoomPhone = !zoomPhone && (Input.GetKeyUp(KeyCode.Mouse1) || Input.GetAxis("Phone") <= .2f);
         if (Input.GetButtonDown("TogglePhone") && !zoomPhone)
@@ -38,13 +56,27 @@ public class phoneInteraction : MonoBehaviour
                 AudioMaster.Instance.PlaySound("TakePhone_In", gameObject);
                 m_Phone.PhonePlace = phone.ePhonePlace.inPocket;
             }
+            else
+            {               
+                if (playOnece == false)
+                {
+                    print("Wallak");
+                    AudioMaster.Instance.PlaySound("TakePhone_Out", gameObject);
+
+                    playOnece = true;
+                }
+            }
         }
         else if (phoneInHand)
         {
             if (zoomPhone)
             {
                 if (stowingPhone)
+                {
                     currentLerpTime = 0;
+                    AudioMaster.Instance.PlaySound("ZoomPhoneIn", gameObject); 
+                }
+                    
 
                 stowingPhone = false;
                 m_Phone.transform.position = Vector3.Lerp(m_Phone.transform.position, center.position, currentLerpTime);
@@ -55,12 +87,17 @@ public class phoneInteraction : MonoBehaviour
             else if (cancelZoomPhone || stowingPhone)
             {
                 if (!stowingPhone)
+                {
                     currentLerpTime = 0;
+                    playOnece = false;
+                }
+                    
 
                 stowingPhone = true;
                 if(playOnece == false)
                 {
-                    AudioMaster.Instance.PlaySound("TakePhone_In", gameObject);
+                    AudioMaster.Instance.PlaySound("ZoomPhoneout", gameObject);
+
                     playOnece = true;
                 }
 

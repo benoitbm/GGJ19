@@ -1,10 +1,13 @@
 Switch Group	ID	Name			Wwise Object Path	Notes
 	312891615	Car_Variation			\Default Work Unit\Car_Variation	
+	1226663785	Battery_Dead			\Default Work Unit\Battery_Dead	
 
 Switch	ID	Name	Switch Group			Notes
 	4189504180	Car3	Car_Variation			
 	4189504181	Car2	Car_Variation			
 	4189504182	Car1	Car_Variation			
+	655265632	Alive	Battery_Dead			
+	2044049779	Dead	Battery_Dead			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
