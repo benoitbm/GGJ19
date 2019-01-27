@@ -8,7 +8,7 @@ public class CarPatrol : MonoBehaviour
     public Transform[] waypoints; //List of waypoints for navigation
     public GameObject player;
 
-    protected float distanceToWaypoint = 1.5f; //Distance at which agent validates arrival at waypoint
+    protected float distanceToWaypoint = 3.0f; //Distance at which agent validates arrival at waypoint
     protected int nextPointIndex = 0; //Waypoint destination
 
     private NavMeshAgent agent;

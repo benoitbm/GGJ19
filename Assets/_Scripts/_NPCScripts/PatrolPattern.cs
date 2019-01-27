@@ -50,30 +50,39 @@ public class PatrolPattern : MonoBehaviour
 
     void GetNextWaypoint() //Movement test procedure
     {
-        if(reversePatrol == false)
+        if(this.gameObject.tag == "NPCS")
         {
-            nextPointIndex++; //Incrementation of waypoint index
-
-            if (nextPointIndex == waypoints.Length) //Check if agent arrived at end of path
+            if (reversePatrol == false)
             {
-                reversePatrol = true;
-                //nextPointIndex = 0;
-                nextPointIndex = waypoints.Length - 1;
+                nextPointIndex++; //Incrementation of waypoint index
+
+                if (nextPointIndex == waypoints.Length) //Check if agent arrived at end of path
+                {
+                    reversePatrol = true;
+                    //nextPointIndex = 0;
+                    nextPointIndex = waypoints.Length - 1;
+                }
             }
+            else
+            {
+                nextPointIndex--;
+
+                if (nextPointIndex == 0)
+                {
+                    reversePatrol = false; //Go back on patrol path
+                    nextPointIndex = 0;
+                }
+            }
+            //nextPointIndex++; //Incrementation of waypoint index
         }
         else
         {
-            nextPointIndex--;
-
-            if(nextPointIndex == 0)
-            {
-                reversePatrol = false; //Go back on patrol path
-                nextPointIndex = 0;
-            }
+            int rand = Random.Range(0, waypoints.Length);
+            nextPointIndex = rand;
         }
-        //nextPointIndex++; //Incrementation of waypoint index
 
-        
+
+
     }
 
     private void Stop() //Stops
