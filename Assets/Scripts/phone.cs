@@ -49,6 +49,8 @@ public class phone : MonoBehaviour
     {
         get { return m_playLostBatterySound; }
         set { m_playLostBatterySound = value; }
+    }
+
     public ePhonePlace PhonePlace
     {
         get { return phonePlace; }
