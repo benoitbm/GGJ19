@@ -40,5 +40,10 @@ namespace Audio_Wwise
         {
             AkSoundEngine.PostEvent(eventname, passedObject);
         }
+        public void SetRTPC(string rtpcName,float value)
+        {
+            AkSoundEngine.SetRTPCValue(rtpcName, value);
+        }
+
     }
 }
