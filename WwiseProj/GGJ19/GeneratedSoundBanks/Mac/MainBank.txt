@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1156346507	Movement_StepPlayer_Stop			\Default Work Unit\Movement_StepPlayer_Stop	
 	1465464336	Car_Stop			\Default Work Unit\Car\Car_Stop	
 	1471192828	Movement_StepPlayer			\Default Work Unit\Movement_StepPlayer	
 	2625436021	TakePhone_Out			\Default Work Unit\TakePhone_Out	
@@ -32,7 +33,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	299625638	TakePhone_Electronic_Out	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\TakePhone_Electronic_Out_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhone_Electronic_Out\TakePhone_Electronic_Out		21064
 	300213179	Takeout_Foley_High_In_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_In_04_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_04		36064
 	361814129	Movement_Coat_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_04_56D34C19_0C139B2C.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_04		24104
-	370751608	Car_Start	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Car\Car_Start_85C3E9D3.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Start		480064
+	370751608	Car_Start	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Car\Car_Start_BE11B329.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Start		480064
 	463802539	Takeout_Foley_High_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\PhoneSFX\Takeout_Foley_High_Out_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_03		45064
 	529941621	Scuff_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Scuff\Scuff_02_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_02		26688
 	553973777	Movement_Coat_07	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\SFX\Movement\Body\Movement_Coat_07_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_07		24104
