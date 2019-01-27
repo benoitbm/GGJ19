@@ -11,6 +11,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{5101EF03-9A30-4E8E-9BA4-9EA99F963576}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Ambience_Street" ID="{172580B0-3FD3-47A6-96CC-2E53B383FAAB}" ShortID="317248267">

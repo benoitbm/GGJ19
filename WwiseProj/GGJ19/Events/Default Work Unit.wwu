@@ -80,7 +80,6 @@
 						<Action Name="" ID="{F1FCB726-D30D-4BC4-8168-E0BDEE99D8D2}" ShortID="19191012">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="Delay" Type="Real64" Value="0.1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -91,7 +90,7 @@
 						<Action Name="" ID="{9F589A30-FFFF-4663-9C6D-0E0BB737DD49}" ShortID="178334254">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="Delay" Type="Real64" Value="0.25"/>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -106,7 +105,6 @@
 						<Action Name="" ID="{A45781D2-1929-42ED-8436-B149FEFD7453}" ShortID="1031783655">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="Delay" Type="Real64" Value="0.25"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -117,7 +115,7 @@
 						<Action Name="" ID="{647726B5-A635-4B6A-9AFD-BB4AB1F9C1D4}" ShortID="59560177">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="Delay" Type="Real64" Value="0.1"/>
+								<Property Name="Delay" Type="Real64" Value="0.15"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -128,6 +126,7 @@
 						<Action Name="" ID="{AE1FF557-A4CF-432A-9A44-FC3E94C7F537}" ShortID="51361813">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -192,6 +191,31 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Movement_StepPlayer_Stop" ID="{98D48F49-194D-447A-A1EE-D64BDCF7D9F4}">
+					<ChildrenList>
+						<Action Name="" ID="{DD2F62D5-9CB3-4E70-9414-EBFCE1E8602D}" ShortID="753340318">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_StepPlayer" ID="{AEDD1569-393C-447A-8378-9B025847957B}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{30A153DB-7673-4DCF-87FE-EB215D80A354}" ShortID="442811838">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+								<Property Name="Delay" Type="Real64" Value="0.15"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement_StepPlayer" ID="{AEDD1569-393C-447A-8378-9B025847957B}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

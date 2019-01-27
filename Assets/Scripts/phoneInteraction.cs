@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Audio_Wwise;
 
 public class phoneInteraction : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class phoneInteraction : MonoBehaviour
     float currentLerpTime;
     bool phoneInHand = false;
     bool stowingPhone = true;
+    bool playOnece = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,9 @@ public class phoneInteraction : MonoBehaviour
             {
                 currentLerpTime = 0;
                 stowingPhone = true;
+                playOnece = false;
+                AudioMaster.Instance.PlaySound("TakePhone_In", gameObject);
+                
             }
         }
         else if (phoneInHand)
@@ -51,6 +56,12 @@ public class phoneInteraction : MonoBehaviour
                     currentLerpTime = 0;
 
                 stowingPhone = true;
+                if(playOnece == false)
+                {
+                    AudioMaster.Instance.PlaySound("TakePhone_In", gameObject);
+                    playOnece = true;
+                }
+
                 m_Phone.transform.position = Vector3.Lerp(m_Phone.transform.position, inHandPos.position, currentLerpTime);
                 m_Phone.transform.rotation = Quaternion.Lerp(m_Phone.transform.rotation, inHandPos.rotation, currentLerpTime);
             }

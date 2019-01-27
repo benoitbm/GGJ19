@@ -12,6 +12,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public RigidbodyFirstPersonController rigidbodyFirstPersonController;
         public float StrideInterval;
         [Range(0f, 1f)] public float RunningStrideLengthen;
+        bool playOnce = false;
 
        // private CameraRefocus m_CameraRefocus;
         private bool m_PreviouslyGrounded;
