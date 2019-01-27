@@ -2806,7 +2806,7 @@ GameObject:
   - component: {fileID: 1863203903}
   - component: {fileID: 1863203902}
   m_Layer: 5
-  m_Name: Move (2)
+  m_Name: Look
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2864,7 +2864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Move
+  m_Text: Look
 --- !u!222 &1863203903
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3046,7 +3046,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: National geographic
+  m_Text: National Drunkscovery
 --- !u!222 &2106111453
 CanvasRenderer:
   m_ObjectHideFlags: 0
