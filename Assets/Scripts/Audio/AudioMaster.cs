@@ -36,9 +36,9 @@ namespace Audio_Wwise
         }
 
         // Update is called once per frame
-        public void  PlaySound(string eventname, GameObject gameobject)
+        public void  PlaySound(string eventname, GameObject passedObject)
         {
-            AkSoundEngine.PostEvent(eventname, gameObject);
+            AkSoundEngine.PostEvent(eventname, passedObject);
         }
     }
 }

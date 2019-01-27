@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using Audio_Wwise;
 public class CarPatrol : MonoBehaviour
 {
     public Transform[] waypoints; //List of waypoints for navigation
@@ -12,11 +12,13 @@ public class CarPatrol : MonoBehaviour
     protected int nextPointIndex = 0; //Waypoint destination
 
     private NavMeshAgent agent;
+    private bool stopped = false;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        AudioMaster.Instance.PlaySound("Car_Start", gameObject);
     }
 
     // Update is called once per frame
@@ -26,12 +28,19 @@ public class CarPatrol : MonoBehaviour
         if(this.GetComponent<CarContact>().carHit != false)
         {
             Stop();
+            stopped = true;
         }
         else
         {
             if (Vector3.Distance(transform.position, waypoints[nextPointIndex].position) < distanceToWaypoint)
             {
                 GetNextWaypoint(); //Call of movement test procedure
+                if(stopped == true)
+                {
+                    AudioMaster.Instance.PlaySound("Car_Start", gameObject);
+                    stopped = false;
+                }
+                
             }
             else
             {
@@ -55,5 +64,7 @@ public class CarPatrol : MonoBehaviour
     {
         
         agent.SetDestination(this.transform.position); //prevent AI from moving towards next waypoint
+        AudioMaster.Instance.PlaySound("Car_Stop", gameObject);
+        stopped = false;
     }
 }

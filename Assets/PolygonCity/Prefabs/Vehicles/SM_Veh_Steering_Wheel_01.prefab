@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 438030}
   - component: {fileID: 3366124}
   - component: {fileID: 2372356}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SM_Veh_Steering_Wheel_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

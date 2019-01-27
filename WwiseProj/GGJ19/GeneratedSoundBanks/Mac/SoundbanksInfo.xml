@@ -31,8 +31,8 @@
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3908818592" Name="Ambience_Start" ObjectPath="\Events\Default Work Unit\Ambience_Start"/>
-				<Event Id="2744306108" Name="Car_Start" ObjectPath="\Events\Default Work Unit\Car\Car_Start"/>
-				<Event Id="1465464336" Name="Car_Stop" ObjectPath="\Events\Default Work Unit\Car\Car_Stop"/>
+				<Event Id="2744306108" Name="Car_Start" ObjectPath="\Events\Default Work Unit\Car\Car_Start" MaxAttenuation="60.000000"/>
+				<Event Id="1465464336" Name="Car_Stop" ObjectPath="\Events\Default Work Unit\Car\Car_Stop" MaxAttenuation="60.000000"/>
 				<Event Id="1471192828" Name="Movement_StepPlayer" ObjectPath="\Events\Default Work Unit\Movement_StepPlayer"/>
 				<Event Id="1156346507" Name="Movement_StepPlayer_Stop" ObjectPath="\Events\Default Work Unit\Movement_StepPlayer_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="3848997754" Name="TakePhone_In" ObjectPath="\Events\Default Work Unit\TakePhone_In"/>
