@@ -15,8 +15,6 @@
 					<ChildrenList>
 						<ActorMixer Name="PhoneIteractions" ID="{36A18D4C-D947-458B-B1E3-0937856F0C5A}" ShortID="536837759">
 							<PropertyList>
-								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
@@ -519,229 +517,6 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<ActorMixer Name="TakePhone_Electronic" ID="{D84E1554-63C5-4981-A6C5-D64BB8DB733A}" ShortID="91759330">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{B61679DF-5F05-4231-8157-2C5F44A77217}" ShortID="901234102">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{9F36E276-EE93-4FCD-ACD1-DCDABA6DDCBD}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-2400</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>60</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-											<RTPCList>
-												<RTPC Name="" ID="{7C6F449C-869D-42EB-B3AC-C55458D6C8AA}" ShortID="886020377">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{73681896-0AA8-43A5-907C-3EB9EB124CDF}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-200</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>0.277777777777778</XPos>
-																<YPos>8</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>60</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="TakePhone_Electronic_Out" ID="{9A40D4DF-609B-4F28-8B00-C1E3A80A71C6}" ShortID="438852278">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="TakePhone_Electronic_Out" ID="{AF2B4CA8-6DD9-4A18-AF9F-FA4DA162B1F8}" ShortID="887242198">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" ShortID="299625638">
-															<Language>SFX</Language>
-															<AudioFile>PhoneSFX\TakePhone_Electronic_Out.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="TakePhone_Electronic_In" ID="{82E8365C-FAC7-4D84-9785-92BEE3E016F3}" ShortID="571290085">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="TakePhone_Electronic_In" ID="{36B0F1E4-EB24-4B70-8868-E5ACF3CD8123}" ShortID="844822052">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" ShortID="913082607">
-															<Language>SFX</Language>
-															<AudioFile>PhoneSFX\TakePhone_Electronic_In.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="LostBattery" ID="{31303081-37CC-4485-AADA-671DFFEE676A}" ShortID="727940309">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-5</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Lost_Battary_Sound_03" ID="{41F5DE74-C8F2-4C8B-BC73-57C2D365ABF0}" ShortID="587288932">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Lost_Battary_Sound_03" ID="{CC484E54-6792-4CC3-8CDD-C08C5046B94C}" ShortID="869136897">
-															<Language>SFX</Language>
-															<AudioFile>PhoneSFX\Lost_Battary_Sound_03.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Lost_Battary_Sound_03" ID="{CC484E54-6792-4CC3-8CDD-C08C5046B94C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Lost_Battary_Sound_01" ID="{8C1F84CC-FF67-49A2-8E3D-046B9F0354DE}" ShortID="961108730">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-4</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Lost_Battary_Sound_01" ID="{CD1B4393-72CF-437D-AB99-2A4298B4FAA7}" ShortID="923786408">
-															<Language>SFX</Language>
-															<AudioFile>PhoneSFX\Lost_Battary_Sound_01.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Lost_Battary_Sound_01" ID="{CD1B4393-72CF-437D-AB99-2A4298B4FAA7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Lost_Battary_Sound_02" ID="{9FB5D998-7567-4C99-ABE6-ED8A419D7278}" ShortID="731683629">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Lost_Battary_Sound_02" ID="{B9FFD13D-E577-40C9-B2B9-15E3B59EB62B}" ShortID="474609432">
-															<Language>SFX</Language>
-															<AudioFile>PhoneSFX\Lost_Battary_Sound_02.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Lost_Battary_Sound_02" ID="{B9FFD13D-E577-40C9-B2B9-15E3B59EB62B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-								</ActorMixer>
 								<ActorMixer Name="Zoom" ID="{7DDD5E79-33CB-40FB-8FEA-F1171B456800}" ShortID="304570622">
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
@@ -999,6 +774,13 @@
 									</ChildrenList>
 								</ActorMixer>
 								<SwitchContainer Name="PhoneUseless" ID="{B1170ABD-888D-462D-95D3-43214D11A0C7}" ShortID="304338319">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
@@ -1032,9 +814,106 @@
 												<ActiveSource Name="Wwise Silence" ID="{F8420E22-DC56-4D74-8B97-0ED10839B257}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<RandomSequenceContainer Name="PlasticPhone" ID="{0E0F1195-2ACA-4FCE-9345-B8CF2EF794E5}" ShortID="78321078">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3D1C6329-0BE0-4F37-B73F-B0BCDAB5EB2C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="PhoneUseless_02" ID="{3334FA44-2332-4C17-8666-773371268450}" ShortID="93348117">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PhoneUseless_02" ID="{8BEFC43D-33F2-4350-A710-23A8CAF1EF68}" ShortID="244265600">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="7.12719298245614E-03"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.39802631578947E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\PhoneUseless_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="PhoneUseless_02" ID="{8BEFC43D-33F2-4350-A710-23A8CAF1EF68}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PhoneUseless_03" ID="{566E7F3B-92EC-43FD-8B16-BAD362694CF6}" ShortID="414396702">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PhoneUseless_03" ID="{EFC58B94-3038-4C31-B768-B8635F4B9431}" ShortID="380214756">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="6.47615131578947E-03"/>
+																<Property Name="TrimBegin" Type="Real64" Value="9.25164473684211E-04"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\PhoneUseless_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="PhoneUseless_03" ID="{EFC58B94-3038-4C31-B768-B8635F4B9431}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="PhoneUseless_01" ID="{BB76759E-6804-408B-BB8D-AE5FD9AE1CAC}" ShortID="634668029">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="PhoneUseless_01" ID="{C577AC05-8E1C-4C9F-846E-CFE17AD8A615}" ShortID="507549487">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="3.70065789473684E-03"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>PhoneSFX\PhoneUseless_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="PhoneUseless_01" ID="{C577AC05-8E1C-4C9F-846E-CFE17AD8A615}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="PlasticPhone" ID="{0E0F1195-2ACA-4FCE-9345-B8CF2EF794E5}"/>
+											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Silence" ID="{B92191AF-7BA8-48DA-87C7-7E7529B11F44}"/>
 											</GroupingBehavior>
@@ -1046,35 +925,15 @@
 													<ItemRef Name="Silence" ID="{B92191AF-7BA8-48DA-87C7-7E7529B11F44}"/>
 												</ItemList>
 											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Dead" ID="{BDA396F7-28AA-45E6-B94C-2F7310169D3E}"/>
+												<ItemList>
+													<ItemRef Name="PlasticPhone" ID="{0E0F1195-2ACA-4FCE-9345-B8CF2EF794E5}"/>
+												</ItemList>
+											</Grouping>
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
-								<Sound Name="Battery_Dead_01" ID="{EAC50459-3517-4D96-8D8F-A1CAC7E265E1}" ShortID="57233733">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-8</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Battery_Dead_01" ID="{4C446E63-B4B0-4C1E-849F-3C444AF70003}" ShortID="4203070">
-											<Language>SFX</Language>
-											<AudioFile>PhoneSFX\Battery_Dead_01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Battery_Dead_01" ID="{4C446E63-B4B0-4C1E-849F-3C444AF70003}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Car" ID="{701F71C4-4EB0-42D8-9476-1E818E19D9A1}" ShortID="796771637">
@@ -1145,7 +1004,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1613,6 +1472,255 @@
 								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<ActorMixer Name="TakePhone_Electronic" ID="{D84E1554-63C5-4981-A6C5-D64BB8DB733A}" ShortID="91759330">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{B61679DF-5F05-4231-8157-2C5F44A77217}" ShortID="901234102">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{9F36E276-EE93-4FCD-ACD1-DCDABA6DDCBD}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-2400</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>60</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{7C6F449C-869D-42EB-B3AC-C55458D6C8AA}" ShortID="886020377">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}" WorkUnitID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{73681896-0AA8-43A5-907C-3EB9EB124CDF}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.277777777777778</XPos>
+														<YPos>8</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>60</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="TakePhone_Electronic_Out" ID="{9A40D4DF-609B-4F28-8B00-C1E3A80A71C6}" ShortID="438852278">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TakePhone_Electronic_Out" ID="{AF2B4CA8-6DD9-4A18-AF9F-FA4DA162B1F8}" ShortID="887242198">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" ShortID="299625638">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\TakePhone_Electronic_Out.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TakePhone_Electronic_Out" ID="{BCCE7F4D-6135-45EE-8288-F14DA41CC752}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="TakePhone_Electronic_In" ID="{82E8365C-FAC7-4D84-9785-92BEE3E016F3}" ShortID="571290085">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TakePhone_Electronic_In" ID="{36B0F1E4-EB24-4B70-8868-E5ACF3CD8123}" ShortID="844822052">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" ShortID="913082607">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\TakePhone_Electronic_In.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TakePhone_Electronic_In" ID="{5D20E0BC-1C58-4E96-A915-CFA1B0057DF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="LostBatteryBar" ID="{31303081-37CC-4485-AADA-671DFFEE676A}" ShortID="727940309">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Lost_Battary_Sound_03" ID="{41F5DE74-C8F2-4C8B-BC73-57C2D365ABF0}" ShortID="587288932">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Lost_Battary_Sound_03" ID="{CC484E54-6792-4CC3-8CDD-C08C5046B94C}" ShortID="869136897">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\Lost_Battary_Sound_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Lost_Battary_Sound_03" ID="{CC484E54-6792-4CC3-8CDD-C08C5046B94C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Lost_Battary_Sound_01" ID="{8C1F84CC-FF67-49A2-8E3D-046B9F0354DE}" ShortID="961108730">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Lost_Battary_Sound_01" ID="{CD1B4393-72CF-437D-AB99-2A4298B4FAA7}" ShortID="923786408">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\Lost_Battary_Sound_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Lost_Battary_Sound_01" ID="{CD1B4393-72CF-437D-AB99-2A4298B4FAA7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Lost_Battary_Sound_02" ID="{9FB5D998-7567-4C99-ABE6-ED8A419D7278}" ShortID="731683629">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Lost_Battary_Sound_02" ID="{B9FFD13D-E577-40C9-B2B9-15E3B59EB62B}" ShortID="474609432">
+													<Language>SFX</Language>
+													<AudioFile>PhoneSFX\Lost_Battary_Sound_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Lost_Battary_Sound_02" ID="{B9FFD13D-E577-40C9-B2B9-15E3B59EB62B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<Sound Name="Battery_Dead_01" ID="{EAC50459-3517-4D96-8D8F-A1CAC7E265E1}" ShortID="57233733">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{554159C5-E1E0-4969-98D7-DAD7F6A2143F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{97F63EF5-738B-4F29-9375-12169227A9D1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Battery_Dead_01" ID="{4C446E63-B4B0-4C1E-849F-3C444AF70003}" ShortID="4203070">
+									<Language>SFX</Language>
+									<AudioFile>PhoneSFX\Battery_Dead_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Battery_Dead_01" ID="{4C446E63-B4B0-4C1E-849F-3C444AF70003}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

@@ -201,23 +201,22 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{30A153DB-7673-4DCF-87FE-EB215D80A354}" ShortID="442811838">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-								<Property Name="Delay" Type="Real64" Value="0.15"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Movement_StepPlayer" ID="{AEDD1569-393C-447A-8378-9B025847957B}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Folder Name="Phone" ID="{C75285EC-0B4F-424B-A503-ACA943A39EE5}" ShortID="111282415">
 					<ChildrenList>
 						<Event Name="TakePhone_In" ID="{E8AF52DB-1351-435B-AC63-D601D4421DAA}">
 							<ChildrenList>
+								<Action Name="" ID="{08729944-3A0C-40D5-A2D8-C88CCC139E7A}" ShortID="1045878447">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PhoneIteractions" ID="{36A18D4C-D947-458B-B1E3-0937856F0C5A}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{A45781D2-1929-42ED-8436-B149FEFD7453}" ShortID="1031783655">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
@@ -254,6 +253,16 @@
 						</Event>
 						<Event Name="TakePhone_Out" ID="{B7802875-4D9B-4A60-A893-6A2978C89CE1}">
 							<ChildrenList>
+								<Action Name="" ID="{D09097C2-C348-486A-9798-07C3A57835F5}" ShortID="186062223">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PhoneIteractions" ID="{36A18D4C-D947-458B-B1E3-0937856F0C5A}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{A5D73A93-DF0D-4E36-8757-52BFDED03960}" ShortID="339750008">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
@@ -289,6 +298,16 @@
 						</Event>
 						<Event Name="ZoomPhoneIn" ID="{BBDB90A2-2F3C-456F-9192-A1BEF6E247BC}">
 							<ChildrenList>
+								<Action Name="" ID="{EC756E7E-5E07-4D49-968D-5BC86D556791}" ShortID="894333864">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PhoneIteractions" ID="{36A18D4C-D947-458B-B1E3-0937856F0C5A}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{2627AB8B-4C08-4653-99AE-AB5426B6943A}" ShortID="105488058">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
@@ -314,6 +333,16 @@
 						</Event>
 						<Event Name="ZoomPhoneOut" ID="{9C1347E4-D360-453C-A9DD-A0B08A2BF8B2}">
 							<ChildrenList>
+								<Action Name="" ID="{136B1BDC-DC06-4C42-B6C0-4440AF74C52A}" ShortID="790456623">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PhoneIteractions" ID="{36A18D4C-D947-458B-B1E3-0937856F0C5A}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{D07CF2B0-2B77-4732-8FEF-859BC14F1CC2}" ShortID="281533202">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
@@ -327,7 +356,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="LostBattery" ID="{7F3E44B2-6E47-4C16-9055-5F49301579C0}">
+						<Event Name="LostBatteryBar" ID="{7F3E44B2-6E47-4C16-9055-5F49301579C0}">
 							<ChildrenList>
 								<Action Name="" ID="{2348E299-3B1A-4391-B4B9-08D3AF1D9D96}" ShortID="386944275">
 									<PropertyList>
@@ -335,7 +364,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="LostBattery" ID="{31303081-37CC-4485-AADA-671DFFEE676A}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
+											<ObjectRef Name="LostBatteryBar" ID="{31303081-37CC-4485-AADA-671DFFEE676A}" WorkUnitID="{88124B62-D842-4EC3-911B-DAA4EFA602C8}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

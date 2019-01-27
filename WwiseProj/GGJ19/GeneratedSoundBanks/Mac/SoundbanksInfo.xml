@@ -39,9 +39,10 @@
 			<Path>MainBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3908818592" Name="Ambience_Start" ObjectPath="\Events\Default Work Unit\Ambience_Start"/>
+				<Event Id="1404125486" Name="BatteryDead" ObjectPath="\Events\Default Work Unit\Phone\BatteryDead"/>
 				<Event Id="2744306108" Name="Car_Start" ObjectPath="\Events\Default Work Unit\Car\Car_Start" MaxAttenuation="60.000000"/>
 				<Event Id="1465464336" Name="Car_Stop" ObjectPath="\Events\Default Work Unit\Car\Car_Stop" MaxAttenuation="60.000000"/>
-				<Event Id="3613384186" Name="LostBattery" ObjectPath="\Events\Default Work Unit\Phone\LostBattery"/>
+				<Event Id="1909547277" Name="LostBatteryBar" ObjectPath="\Events\Default Work Unit\Phone\LostBatteryBar"/>
 				<Event Id="1471192828" Name="Movement_StepPlayer" ObjectPath="\Events\Default Work Unit\Movement_StepPlayer"/>
 				<Event Id="1156346507" Name="Movement_StepPlayer_Stop" ObjectPath="\Events\Default Work Unit\Movement_StepPlayer_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="3848997754" Name="TakePhone_In" ObjectPath="\Events\Default Work Unit\Phone\TakePhone_In"/>
@@ -124,6 +125,10 @@
 					<ShortName>PhoneSFX\Takeout_Foley_Low_In_01.wav</ShortName>
 					<Path>SFX\PhoneSFX\Takeout_Foley_Low_In_01_56D34C19.wem</Path>
 				</File>
+				<File Id="244265600" Language="SFX">
+					<ShortName>PhoneSFX\PhoneUseless_02.wav</ShortName>
+					<Path>SFX\PhoneSFX\PhoneUseless_02_5C6C0612.wem</Path>
+				</File>
 				<File Id="260109500" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_Zippers_Out_02.wav</ShortName>
 					<Path>SFX\PhoneSFX\Takeout_Foley_Zippers_Out_02_56D34C19.wem</Path>
@@ -160,6 +165,10 @@
 					<ShortName>Car\Car_Start.wav</ShortName>
 					<Path>SFX\Car\Car_Start_2C5DBA4A.wem</Path>
 				</File>
+				<File Id="380214756" Language="SFX">
+					<ShortName>PhoneSFX\PhoneUseless_03.wav</ShortName>
+					<Path>SFX\PhoneSFX\PhoneUseless_03_27145BAA.wem</Path>
+				</File>
 				<File Id="428020126" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_High_In_01.wav</ShortName>
 					<Path>SFX\PhoneSFX\Takeout_Foley_High_In_01_9B82EF4E_74A9EEAF.wem</Path>
@@ -171,6 +180,10 @@
 				<File Id="474609432" Language="SFX">
 					<ShortName>PhoneSFX\Lost_Battary_Sound_02.wav</ShortName>
 					<Path>SFX\PhoneSFX\Lost_Battary_Sound_02_56D34C19.wem</Path>
+				</File>
+				<File Id="507549487" Language="SFX">
+					<ShortName>PhoneSFX\PhoneUseless_01.wav</ShortName>
+					<Path>SFX\PhoneSFX\PhoneUseless_01_57C04E59.wem</Path>
 				</File>
 				<File Id="522048992" Language="SFX">
 					<ShortName>Car\Car3_Stop.wav</ShortName>

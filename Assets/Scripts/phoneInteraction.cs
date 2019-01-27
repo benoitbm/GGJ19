@@ -28,11 +28,17 @@ public class phoneInteraction : MonoBehaviour
         {
             if(phoneInHand)
             {
-                AudioMaster.Instance.PlaySound("LostBattery", gameObject);
+                if(m_Phone.PhoneState == phone.phoneState.empty)
+                {
+                    AudioMaster.Instance.PlaySound("BatteryDead", gameObject);
+                }
+                else
+                {
+                    AudioMaster.Instance.PlaySound("LostBatteryBar", gameObject);
+                }
+                m_Phone.playLostBatterySound = false;
                 //ToDo Vibration ?
             }
-
-            m_Phone.playLostBatterySound = false;
         }
 
 

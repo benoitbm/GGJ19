@@ -26,6 +26,7 @@ public class phone : MonoBehaviour
     float remainingBattery;
     float maximumBattery;
     phoneState batteryState;
+    private bool playOnce = false;
     private bool m_InBar = false;
     public bool InBar
     {
@@ -75,11 +76,17 @@ public class phone : MonoBehaviour
             {
                 remainingBattery = 0;
                 batteryState = phoneState.empty;
+                if (playOnce == false)
+                {
+                    m_playLostBatterySound = true;
+                    playOnce = true;
+                }
+                    
                 miniMap.SetActive(false);
             }
             else
             {
-
+                playOnce = false;
                 int previousBatterystate = (int)batteryState;
                 batteryState = (phoneState)Mathf.CeilToInt(remainingBattery / secondsPerBar);
                 if (previousBatterystate > (int)batteryState)
