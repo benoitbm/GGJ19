@@ -10,17 +10,20 @@ public class SpawnText : MonoBehaviour
     void Start()
     {
         r = GetComponent<Renderer>();
-        r.enabled = false;
+        if (r)
+            r.enabled = false;
+        else
+            Debug.Assert(false, "No renderer for this object !");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(this.gameObject.GetComponentInParent<Reaction>().contact != false)
+        if(this.gameObject.GetComponentInParent<Reaction>().contact != false && r)
         {
             r.enabled = true;
         }
-        else
+        else if (r)
         {
             r.enabled = false;
         }
