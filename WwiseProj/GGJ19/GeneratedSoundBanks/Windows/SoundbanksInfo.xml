@@ -11,7 +11,7 @@
 	<StreamedFiles>
 		<File Id="259234071" Language="SFX">
 			<ShortName>Car\Car3_Loop.wav</ShortName>
-			<Path>SFX\Car\Car3_Loop_6CAE07BF.wem</Path>
+			<Path>SFX\Car\Car3_Loop_7A45DEA7.wem</Path>
 		</File>
 		<File Id="560006247" Language="SFX">
 			<ShortName>Car\Car_Loop.wav</ShortName>
@@ -23,11 +23,15 @@
 		</File>
 		<File Id="698773064" Language="SFX">
 			<ShortName>Car\Car2_Loop.wav</ShortName>
-			<Path>SFX\Car\Car2_Loop_15D3F138.wem</Path>
+			<Path>SFX\Car\Car2_Loop_71387C56.wem</Path>
 		</File>
 		<File Id="741041618" Language="SFX">
 			<ShortName>Ambience\Ambience_Bar.wav</ShortName>
 			<Path>SFX\Ambience\Ambience_Bar_8956FC97_EB13D637.wem</Path>
+		</File>
+		<File Id="835019663" Language="English(US)">
+			<ShortName>Narrator_Intro_Clean.wav</ShortName>
+			<Path>Voices\English(US)\Narrator_Intro_Clean_56D34C19.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -36,6 +40,17 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1534528548" Language="English(US)">
+			<ObjectPath>\SoundBanks\Default Work Unit\VO</ObjectPath>
+			<ShortName>VO</ShortName>
+			<Path>English(US)\VO.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4264743395" Name="Narrator_Start" ObjectPath="\Events\VO\Narrator_Start"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="835019663"/>
+			</ReferencedStreamedFiles>
 		</SoundBank>
 		<SoundBank Id="2880737896" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>
@@ -91,7 +106,7 @@
 				</File>
 				<File Id="55400140" Language="SFX">
 					<ShortName>Drink\Drink_02.wav</ShortName>
-					<Path>SFX\Drink\Drink_02_CA450AB1.wem</Path>
+					<Path>SFX\Drink\Drink_02_FBE2E1C2.wem</Path>
 				</File>
 				<File Id="57562108" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_Zippers_In_03.wav</ShortName>
@@ -99,7 +114,7 @@
 				</File>
 				<File Id="57830365" Language="SFX">
 					<ShortName>Drink\Drink_01.wav</ShortName>
-					<Path>SFX\Drink\Drink_01_C230265F.wem</Path>
+					<Path>SFX\Drink\Drink_01_84B7CA0A.wem</Path>
 				</File>
 				<File Id="60911491" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_Zippers_Out_03.wav</ShortName>
@@ -143,7 +158,7 @@
 				</File>
 				<File Id="244265600" Language="SFX">
 					<ShortName>PhoneSFX\PhoneUseless_02.wav</ShortName>
-					<Path>SFX\PhoneSFX\PhoneUseless_02_5C6C0612.wem</Path>
+					<Path>SFX\PhoneSFX\PhoneUseless_02_372CEB6A.wem</Path>
 				</File>
 				<File Id="260109500" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_Zippers_Out_02.wav</ShortName>
@@ -175,19 +190,19 @@
 				</File>
 				<File Id="365946911" Language="SFX">
 					<ShortName>Car\Car2_Stop.wav</ShortName>
-					<Path>SFX\Car\Car2_Stop_AD9BEB9D.wem</Path>
+					<Path>SFX\Car\Car2_Stop_2814C10B.wem</Path>
 				</File>
 				<File Id="370751608" Language="SFX">
 					<ShortName>Car\Car_Start.wav</ShortName>
-					<Path>SFX\Car\Car_Start_2C5DBA4A.wem</Path>
+					<Path>SFX\Car\Car_Start_24EC1811.wem</Path>
 				</File>
 				<File Id="380214756" Language="SFX">
 					<ShortName>PhoneSFX\PhoneUseless_03.wav</ShortName>
-					<Path>SFX\PhoneSFX\PhoneUseless_03_27145BAA.wem</Path>
+					<Path>SFX\PhoneSFX\PhoneUseless_03_712ABDB1.wem</Path>
 				</File>
 				<File Id="428020126" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_High_In_01.wav</ShortName>
-					<Path>SFX\PhoneSFX\Takeout_Foley_High_In_01_9B82EF4E_74A9EEAF.wem</Path>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_In_01_61EA9FCB_74A9EEAF.wem</Path>
 				</File>
 				<File Id="463802539" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_High_Out_03.wav</ShortName>
@@ -199,11 +214,11 @@
 				</File>
 				<File Id="507549487" Language="SFX">
 					<ShortName>PhoneSFX\PhoneUseless_01.wav</ShortName>
-					<Path>SFX\PhoneSFX\PhoneUseless_01_57C04E59.wem</Path>
+					<Path>SFX\PhoneSFX\PhoneUseless_01_34A361A0.wem</Path>
 				</File>
 				<File Id="522048992" Language="SFX">
 					<ShortName>Car\Car3_Stop.wav</ShortName>
-					<Path>SFX\Car\Car3_Stop_64039862.wem</Path>
+					<Path>SFX\Car\Car3_Stop_BFC52915.wem</Path>
 				</File>
 				<File Id="529941621" Language="SFX">
 					<ShortName>Movement\Scuff\Scuff_02.wav</ShortName>
@@ -228,7 +243,7 @@
 				</File>
 				<File Id="636296793" Language="SFX">
 					<ShortName>Car\Car_Stop.wav</ShortName>
-					<Path>SFX\Car\Car_Stop_E6875419.wem</Path>
+					<Path>SFX\Car\Car_Stop_8EEBD2F5.wem</Path>
 				</File>
 				<File Id="637219140" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_High_Out_01.wav</ShortName>
@@ -268,7 +283,7 @@
 				</File>
 				<File Id="728433700" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_High_In_03.wav</ShortName>
-					<Path>SFX\PhoneSFX\Takeout_Foley_High_In_03_C955FBA3_74A9EEAF.wem</Path>
+					<Path>SFX\PhoneSFX\Takeout_Foley_High_In_03_66EBAB35_74A9EEAF.wem</Path>
 				</File>
 				<File Id="772325156" Language="SFX">
 					<ShortName>PhoneSFX\Takeout_Foley_High_In_02.wav</ShortName>

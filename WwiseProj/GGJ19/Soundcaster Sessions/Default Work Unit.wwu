@@ -14,6 +14,10 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Narrator" ID="{F6BC7C54-1C4A-49C0-96A4-A191E837D9C4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Car_Stop" ID="{97CF9CDC-32B8-4EA6-9B2F-642C31C1A7D1}" WorkUnitID="{733A4483-F308-4295-95CF-9BFEF43AFA65}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -44,7 +48,9 @@
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Game" ID="{1D7DC8F8-B455-4658-8D6B-8EE3C991A65C}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Car1" ID="{4536DA69-D21F-40AC-8CEF-8DA0C0BE3602}"/>
 					</CurrentSwitchList>

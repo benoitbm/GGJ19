@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="89">
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Actor-Mixer Hierarchy\Ambeince.wwu" DateLow="1548531843" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Actor-Mixer Hierarchy\Ambeince.wwu" DateLow="1548604330" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1548531632" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1548515131" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Actor-Mixer Hierarchy\Movement.wwu" DateLow="1548534206" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1548540704" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Attenuations\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Actor-Mixer Hierarchy\Movement.wwu" DateLow="1548582619" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1548606577" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Attenuations\Default Work Unit.wwu" DateLow="1548578835" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Audio Devices\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Control Surface Sessions\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Conversion Settings\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Effects\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Effects\Factory Effects.wwu" DateLow="1548515131" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Events\Default Work Unit.wwu" DateLow="1548540704" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Game Parameters\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\GGJ19.DarKen.wsettings" DateLow="1548540926" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Effects\Factory Effects.wwu" DateLow="1548604301" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Events\Default Work Unit.wwu" DateLow="1548605938" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Game Parameters\Default Work Unit.wwu" DateLow="1548603293" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\GGJ19.DarKen.wsettings" DateLow="1548606877" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\GGJ19.wproj" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1548563334" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Mixing Sessions\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Modulators\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Presets\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Queries\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Queries\Factory Queries.wwu" DateLow="1548515131" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\SoundBanks\Default Work Unit.wwu" DateLow="1548530252" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\SoundBanks\Default Work Unit.wwu" DateLow="1548542204" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1548604070" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\States\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
-	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Switches\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
+	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Switches\Default Work Unit.wwu" DateLow="1548585321" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Triggers\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\Virtual Acoustics\Default Work Unit.wwu" DateLow="1548515131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\BIT\GGJ19\WwiseProj\GGJ19\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1548484952" DateHigh="0"/>

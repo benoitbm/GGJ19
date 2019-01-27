@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4264743395	Narrator_Start			\VO\Narrator_Start	
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	835019663	Narrator	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Mac\Voices\English(US)\Narrator_Intro_Clean_56D34C19.wem	835019663.wem	\Actor-Mixer Hierarchy\VO\VO_Master\Narrator	
+

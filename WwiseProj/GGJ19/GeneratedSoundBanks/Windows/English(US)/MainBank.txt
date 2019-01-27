@@ -1,0 +1,112 @@
+Event	ID	Name			Wwise Object Path	Notes
+	97138242	BarEnter			\Default Work Unit\Ambiences\BarEnter	
+	1156346507	Movement_StepPlayer_Stop			\Default Work Unit\Movement_StepPlayer_Stop	
+	1404125486	BatteryDead			\Default Work Unit\Phone\BatteryDead	
+	1465464336	Car_Stop			\Default Work Unit\Car\Car_Stop	
+	1471192828	Movement_StepPlayer			\Default Work Unit\Movement_StepPlayer	
+	1909547277	LostBatteryBar			\Default Work Unit\Phone\LostBatteryBar	
+	2055070848	ZoomPhoneOut			\Default Work Unit\Phone\ZoomPhoneOut	
+	2192000613	BarLeave			\Default Work Unit\Ambiences\BarLeave	
+	2201969025	Drink			\Default Work Unit\Drink	
+	2625436021	TakePhone_Out			\Default Work Unit\Phone\TakePhone_Out	
+	2744306108	Car_Start			\Default Work Unit\Car\Car_Start	
+	2780459649	ZoomPhoneIn			\Default Work Unit\Phone\ZoomPhoneIn	
+	3848997754	TakePhone_In			\Default Work Unit\Phone\TakePhone_In	
+	3908818592	Ambience_Start			\Default Work Unit\Ambiences\Ambience_Start	
+	4264743395	Narrator_Start			\Default Work Unit\VO\Narrator_Start	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	312891615	Car_Variation			\Default Work Unit\Car_Variation	
+	1226663785	Battery_Dead			\Default Work Unit\Battery_Dead	
+
+Switch	ID	Name	Switch Group			Notes
+	4189504180	Car3	Car_Variation			
+	4189504181	Car2	Car_Variation			
+	4189504182	Car1	Car_Variation			
+	655265632	Alive	Battery_Dead			
+	2044049779	Dead	Battery_Dead			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	97138242	BarEnter			\Default Work Unit\BarEnter	
+	312891615	Car_Variation			\Default Work Unit\Car_Variation	
+	724758105	Car_Engine_Pitch			\Default Work Unit\Car_Engine_Pitch	
+	2337050305	Battery_Life			\Default Work Unit\Battery_Life	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	172625391	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\PhoneUseless\Silence\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	3411922	Movement_Coat_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Body\Movement_Coat_02_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_02		24104
+	4203070	Battery_Dead_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Battery_Dead_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Battery_Dead_01		45064
+	9693878	Footstep_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Footstep\Footstep_04_95BC263D.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_04		16188
+	20484929	Scuff_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Scuff\Scuff_03_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_03		18496
+	27331513	Takeout_Foley_Low_Out_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Low_Out_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_Low_Out\Takeout_Foley_Low_Out_02		42064
+	28809976	Footstep_05	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Footstep\Footstep_05_F0004F35.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_05		16268
+	55400140	Drink_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Drink\Drink_02_FBE2E1C2.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Drink\Drink_02		384064
+	57562108	Takeout_Foley_Zippers_In_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Zippers_In_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_In_03		36064
+	57830365	Drink_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Drink\Drink_01_84B7CA0A.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Drink\Drink_01		336064
+	60911491	Takeout_Foley_Zippers_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Zippers_Out_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_Out_03		45064
+	69264397	Takeout_Foley_High_In_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_In_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_01		30064
+	102418887	Takeout_Foley_Zippers_In_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Zippers_In_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_In_02		36064
+	104865149	Scuff_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Scuff\Scuff_04_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_04		16448
+	133795395	Takeout_Foley_High_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_Out_01_56D34C19_74A9EEAF.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Zoom\TakePhoneZoomOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_01		43072
+	140449848	Takeout_Foley_High_In_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_In_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_02		36064
+	158764444	Takeout_Foley_Low_In_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Low_In_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_Low_In\Takeout_Foley_Low_In_02		36064
+	175987558	Movement_Coat_06	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Body\Movement_Coat_06_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_06		24104
+	184525560	Movement_Coat_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Body\Movement_Coat_03_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_03		24104
+	198521359	Takeout_Foley_Low_In_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Low_In_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_Low_In\Takeout_Foley_Low_In_01		30064
+	244265600	PhoneUseless_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\PhoneUseless_02_372CEB6A.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\PhoneUseless\PlasticPhone\PhoneUseless_02		22722
+	260109500	Takeout_Foley_Zippers_Out_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Zippers_Out_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_Out_02		42064
+	268633187	Takeout_Foley_Low_In_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Low_In_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_Low_In\Takeout_Foley_Low_In_03		36064
+	285635670	Takeout_Foley_High_Out_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_Out_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_02		42064
+	298774365	Footstep_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Footstep\Footstep_02_FA677612.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_02		13170
+	299625638	TakePhone_Electronic_Out	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\TakePhone_Electronic_Out_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\TakePhone_Electronic\TakePhone_Electronic_Out\TakePhone_Electronic_Out		21064
+	300213179	Takeout_Foley_High_In_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_In_04_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_04		36064
+	361814129	Movement_Coat_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Body\Movement_Coat_04_56D34C19_0C139B2C.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_04		24104
+	365946911	Car2_Stop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Car\Car2_Stop_2814C10B.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Stop\Car2_Stop		156096
+	370751608	Car1_Start	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Car\Car_Start_24EC1811.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Start\Car1_Start		240064
+	380214756	PhoneUseless_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\PhoneUseless_03_712ABDB1.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\PhoneUseless\PlasticPhone\PhoneUseless_03		26976
+	428020126	Takeout_Foley_High_In_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_In_01_61EA9FCB_74A9EEAF.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Zoom\TakePhoneZoomIn\Takeout_Folley_High_In\Takeout_Foley_High_In_01		36928
+	463802539	Takeout_Foley_High_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_Out_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_03		45064
+	474609432	Lost_Battary_Sound_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Lost_Battary_Sound_02_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\TakePhone_Electronic\LostBatteryBar\Lost_Battary_Sound_02		51064
+	507549487	PhoneUseless_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\PhoneUseless_01_34A361A0.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\PhoneUseless\PlasticPhone\PhoneUseless_01		27064
+	522048992	Car3_Stop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Car\Car3_Stop_BFC52915.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Stop\Car3_Stop		240064
+	529941621	Scuff_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Scuff\Scuff_02_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_02		26688
+	553058639	Takeout_Foley_High_Out_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_Out_02_56D34C19_74A9EEAF.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Zoom\TakePhoneZoomOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_02		53312
+	553973777	Movement_Coat_07	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Body\Movement_Coat_07_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_07		24104
+	573993897	Drink_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Drink\Drink_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Drink\Drink_03		432064
+	593964243	Ambience_Street	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Ambience\Ambience_001_8956FC97.wem		\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Street		19264
+	636296793	Car1_Stop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Car\Car_Stop_8EEBD2F5.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Stop\Car1_Stop		432064
+	637219140	Takeout_Foley_High_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_Out_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_01		33064
+	647204295	Scuff_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Scuff\Scuff_01_56D34C19_5CCA4701.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Scuff\Scuff_01		24640
+	655201480	Takeout_Foley_Low_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Low_Out_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_Low_Out\Takeout_Foley_Low_Out_01		33064
+	658561931	Car2_Start	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Car\Car2_Start_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Start\Car2_Start		288064
+	658942025	Takeout_Foley_Low_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Low_Out_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_Low_Out\Takeout_Foley_Low_Out_03		45064
+	666378983	Footstep_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Footstep\Footstep_01_F6E3D277.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_01		12420
+	684878441	Takeout_Foley_High_In_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_In_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneIn\Takeout_Folley_High_In\Takeout_Foley_High_In_03		36064
+	719628359	Takeout_Foley_Zippers_In_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Zippers_In_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_In_01		30064
+	722767430	Takeout_Foley_High_Out_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_Out_03_56D34C19_74A9EEAF.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Zoom\TakePhoneZoomOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_03		55360
+	728433700	Takeout_Foley_High_In_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_In_03_66EBAB35_74A9EEAF.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Zoom\TakePhoneZoomIn\Takeout_Folley_High_In\Takeout_Foley_High_In_03		47168
+	772325156	Takeout_Foley_High_In_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_In_02_56D34C19_74A9EEAF.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Zoom\TakePhoneZoomIn\Takeout_Folley_High_In\Takeout_Foley_High_In_02		47168
+	777493592	Takeout_Foley_High_Out_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_Out_04_56D34C19_74A9EEAF.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Zoom\TakePhoneZoomOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_04		55360
+	813834047	Takeout_Foley_High_Out_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_Out_04_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\TakePhoneOut\Takeout_Folley_High_Out\Takeout_Foley_High_Out_04		45060
+	824954221	Footstep_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Footstep\Footstep_03_871A7055.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_03		15696
+	861144090	Takeout_Foley_Zippers_Out_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_Zippers_Out_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Takeout_Folley_Zipper\Takeout_Foley_Zippers_Out_01		33064
+	869136897	Lost_Battary_Sound_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Lost_Battary_Sound_03_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\TakePhone_Electronic\LostBatteryBar\Lost_Battary_Sound_03		60064
+	903343906	Car3_Start	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Car\Car3_Start_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Start\Car3_Start		576064
+	913082607	TakePhone_Electronic_In	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\TakePhone_Electronic_In_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\TakePhone_Electronic\TakePhone_Electronic_In\TakePhone_Electronic_In		21064
+	923786408	Lost_Battary_Sound_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Lost_Battary_Sound_01_56D34C19.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\TakePhone_Electronic\LostBatteryBar\Lost_Battary_Sound_01		45064
+	944530627	Movement_Coat_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Body\Movement_Coat_01_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_01		24064
+	1000981139	Takeout_Foley_High_In_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\PhoneSFX\Takeout_Foley_High_In_04_56D34C19_74A9EEAF.wem		\Actor-Mixer Hierarchy\SFX\SFX_Master\PhoneIteractions\Zoom\TakePhoneZoomIn\Takeout_Folley_High_In\Takeout_Foley_High_In_04		47168
+	1009321535	Footstep_07	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Footstep\Footstep_07_4594ADCE.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_07		17136
+	1011616082	Footstep_06	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Footstep\Footstep_06_87F48161.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Footsetp\Footstep_06		13900
+	1033674219	Movement_Coat_05	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Movement\Body\Movement_Coat_05_56D34C19.wem		\Actor-Mixer Hierarchy\Movement\Movement_Master\Movement_Body\Movement_Coat_05		24104
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	259234071	Car3_Loop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Car\Car3_Loop_7A45DEA7.wem	259234071.wem	\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Loop\Car3_Loop	
+	560006247	Car1_Loop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Car\Car_Loop_8956FC97.wem	560006247.wem	\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Loop\Car1_Loop	
+	593964243	Ambience_Street	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Ambience\Ambience_001_8956FC97.wem	593964243.wem	\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Street	
+	698773064	Car2_Loop	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Car\Car2_Loop_71387C56.wem	698773064.wem	\Actor-Mixer Hierarchy\SFX\SFX_Master\Car\Car_Loop\Car2_Loop	
+	741041618	Ambience_Bar	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\SFX\Ambience\Ambience_Bar_8956FC97_EB13D637.wem	741041618.wem	\Actor-Mixer Hierarchy\Ambeince\Ambience_Master\Ambience_Bar	
+	835019663	Narrator	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Intro_Clean_56D34C19.wem	835019663.wem	\Actor-Mixer Hierarchy\VO\VO_Master\Narrator	
+

@@ -386,6 +386,27 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{447A0588-3906-4F0B-B9E1-FF624748414A}" ShortID="219260824">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro" ID="{C2CCB73F-8826-452E-A2AF-857A62A5D475}" WorkUnitID="{87662CD3-FBEC-4FA9-9D1A-84204E0E1CB6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BE300991-03D5-44B6-ABD0-7C178D845A56}" ShortID="661850438">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="20"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Game" ID="{1D7DC8F8-B455-4658-8D6B-8EE3C991A65C}" WorkUnitID="{87662CD3-FBEC-4FA9-9D1A-84204E0E1CB6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="BarEnter" ID="{4EE6F5FB-6094-42C1-8A9C-7EAD56790666}">

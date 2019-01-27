@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8626698632895949902}
   - component: {fileID: 8626698632895949903}
   - component: {fileID: 8626698632895949900}
+  - component: {fileID: 7424741896417570830}
+  - component: {fileID: 8843523800155344080}
   m_Layer: 0
   m_Name: AudioMaster
   m_TagString: Untagged
@@ -117,3 +119,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43710d49ec8b9fe47bccac2f6f20b204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7424741896417570830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626698632895949901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23598753a4e143b46ae0c47d3206753b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 31cf8930b64f60a48adfbe7b02f03a5b,
+      type: 2}
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: 
+--- !u!114 &8843523800155344080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626698632895949901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03051259b7a7cc345b499087eebd178e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 97cace3de6397b742b94feb87ab0b1cb,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  valueGuid: 

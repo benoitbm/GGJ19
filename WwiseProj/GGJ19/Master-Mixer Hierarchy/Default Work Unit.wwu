@@ -17,6 +17,79 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<Bus Name="Ambience" ID="{4B9342CC-CCE0-42CD-A96E-CEDB84B7CB50}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="GameState" ID="{8627EEB9-4DC0-407A-AB60-2F20AEDF2F8C}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Intro" ID="{C2CCB73F-8826-452E-A2AF-857A62A5D475}"/>
+										<State Name="" ID="{CE282283-B488-4194-BB06-C7E5F117B527}" ShortID="552534252">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Game" ID="{1D7DC8F8-B455-4658-8D6B-8EE3C991A65C}"/>
+										<State Name="" ID="{99B269F8-1A53-4648-B45E-65A42951018B}" ShortID="758280061"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="SFX" ID="{760AF861-5E7A-4DA8-8FE0-A999CB9C94BF}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="GameState" ID="{8627EEB9-4DC0-407A-AB60-2F20AEDF2F8C}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Intro" ID="{C2CCB73F-8826-452E-A2AF-857A62A5D475}"/>
+										<State Name="" ID="{C5F5581D-2AC3-4151-AD56-E99941AD59EC}" ShortID="141004331">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Game" ID="{1D7DC8F8-B455-4658-8D6B-8EE3C991A65C}"/>
+										<State Name="" ID="{39D14647-8FDC-48CF-A797-9DDF30309599}" ShortID="440641938"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="VO" ID="{1BB91B11-F5BA-401D-B3E7-D7569FFD33E1}">
+							<PropertyList>
+								<Property Name="RecoveryTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Ambience" ID="{4B9342CC-CCE0-42CD-A96E-CEDB84B7CB50}"/>
+									<DuckingParam>
+										<Volume>-4</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>0.200000002980232</FadeOutTime>
+										<FadeCurve>FadeLog1</FadeCurve>
+										<TargetProp>BusVolume</TargetProp>
+									</DuckingParam>
+								</DuckItem>
+								<DuckItem>
+									<BusRef Name="SFX" ID="{760AF861-5E7A-4DA8-8FE0-A999CB9C94BF}"/>
+									<DuckingParam>
+										<Volume>-4</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>0.200000002980232</FadeOutTime>
+										<FadeCurve>FadeLog2</FadeCurve>
+										<TargetProp>BusVolume</TargetProp>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

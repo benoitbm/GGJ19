@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A50835FF-F84D-48AF-8457-EE8EE0FABA16}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="VO" ID="{A50835FF-F84D-48AF-8457-EE8EE0FABA16}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Narrator_Start" ID="{9B7C0F95-246C-45F6-86EF-407305152479}">
+					<ChildrenList>
+						<Action Name="" ID="{67B55360-E9C1-4604-9777-85309155C322}" ShortID="932336305">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Narrator" ID="{F6BC7C54-1C4A-49C0-96A4-A191E837D9C4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
