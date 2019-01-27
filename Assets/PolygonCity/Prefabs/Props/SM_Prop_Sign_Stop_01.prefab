@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 431594}
   - component: {fileID: 3382550}
   - component: {fileID: 2371630}
+  - component: {fileID: 7613453769747410026}
   m_Layer: 0
   m_Name: SM_Prop_Sign_Stop_01
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7613453769747410026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 2.2712388, z: 0.12486282}
+  m_Center: {x: -0.000000029802322, y: 1.1356194, z: 0.00076682866}

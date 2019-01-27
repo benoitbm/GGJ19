@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 447308}
   - component: {fileID: 3320722}
   - component: {fileID: 2391774}
+  - component: {fileID: 88460184057800562}
   m_Layer: 0
   m_Name: SM_Prop_Couch_01
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &88460184057800562
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.827774, y: 1.0601746, z: 1.1295776}
+  m_Center: {x: 0, y: 0.5300873, z: 0}

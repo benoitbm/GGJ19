@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 455234}
   - component: {fileID: 3346898}
   - component: {fileID: 2368466}
+  - component: {fileID: 1544332767497420596}
   m_Layer: 0
   m_Name: SM_Bld_Apartment_Stairs_Planter_01
   m_TagString: Untagged
@@ -77,3 +78,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1544332767497420596
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: ff5cbf6f60105054b93e3851b435ab4b, type: 3}

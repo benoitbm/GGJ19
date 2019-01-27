@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 472252}
   - component: {fileID: 3325914}
   - component: {fileID: 2314354}
+  - component: {fileID: 555731218655704926}
   m_Layer: 0
   m_Name: SM_Bld_Station_01
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &555731218655704926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.4, y: 8.584473, z: 8.4}
+  m_Center: {x: 0, y: 4.2922363, z: 0.0000038146973}

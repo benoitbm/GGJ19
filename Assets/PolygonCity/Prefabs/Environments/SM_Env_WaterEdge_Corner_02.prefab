@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 482562}
   - component: {fileID: 3312862}
   - component: {fileID: 2384410}
+  - component: {fileID: 4022750068555402516}
+  - component: {fileID: 7213923633687753884}
   m_Layer: 0
   m_Name: SM_Env_WaterEdge_Corner_02
   m_TagString: Untagged
@@ -77,3 +79,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4022750068555402516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5.4325843, z: 1.5073929}
+  m_Center: {x: -0.08, y: -0.27, z: -1.77}
+--- !u!65 &7213923633687753884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.22, y: 5.4325843, z: 4.89}
+  m_Center: {x: 1.47, y: -0.27, z: 0.37}

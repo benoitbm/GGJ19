@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 421550}
   - component: {fileID: 3309938}
   - component: {fileID: 2393092}
+  - component: {fileID: 2071005828254389726}
   m_Layer: 0
   m_Name: SM_Prop_ParkBench_01
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2071005828254389726
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.079465, y: 1.0482581, z: 0.62364006}
+  m_Center: {x: -0.050715625, y: 0.52412903, z: -0.0019445419}

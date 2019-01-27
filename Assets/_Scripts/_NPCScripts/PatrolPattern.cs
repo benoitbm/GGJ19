@@ -3,6 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/*
+ * 
+ * 
+ * Modify NPC Tag to modify it's movement pattern 
+ * 
+ * NPCR = Random movement between NavPoints
+ * 
+ * NPCS = Set movement pattern between NavPoints
+ * 
+ */
+
 public class PatrolPattern : MonoBehaviour
 {
     public Transform[] waypoints; //List of waypoints for navigation
@@ -50,7 +61,7 @@ public class PatrolPattern : MonoBehaviour
 
     void GetNextWaypoint() //Movement test procedure
     {
-        if(this.gameObject.tag == "NPCS")
+        if(this.gameObject.tag == "NPCS") //Preset patrol pattern
         {
             if (reversePatrol == false)
             {
@@ -75,7 +86,7 @@ public class PatrolPattern : MonoBehaviour
             }
             //nextPointIndex++; //Incrementation of waypoint index
         }
-        else
+        else if(this.gameObject.tag == "NPCR") //Random Navigation
         {
             int rand = Random.Range(0, waypoints.Length);
             nextPointIndex = rand;
