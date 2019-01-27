@@ -20,7 +20,7 @@ public class PatrolPattern : MonoBehaviour
     public Rigidbody aRigidbody;
     public Transform target;
 
-    protected float distanceToWaypoint = 1.5f; //Distance at which agent validates arrival at waypoint
+    protected float distanceToWaypoint = 2.0f; //Distance at which agent validates arrival at waypoint
     protected int nextPointIndex = 0; //Waypoint destination
     protected bool reversePatrol = false;
 
