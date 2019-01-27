@@ -3,7 +3,12 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{57F33BF3-27B0-4845-95EE-3D6FA2655866}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}"/>
+				<GameParameter Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="60"/>
+						<Property Name="Max" Type="Real64" Value="60"/>
+					</PropertyList>
+				</GameParameter>
 				<GameParameter Name="Car_Engine_Pitch" ID="{402B2E3F-D473-4A4F-BA0A-253DAA39D7D3}"/>
 				<GameParameter Name="Car_Variation" ID="{68BDE562-908A-40FA-ACE5-4423E3D589D5}">
 					<PropertyList>

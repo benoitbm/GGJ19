@@ -43,6 +43,40 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="Battery_Dead" ID="{A2565B0D-0267-4EE2-849B-2BD5C142D0E1}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Dead" ID="{BDA396F7-28AA-45E6-B94C-2F7310169D3E}"/>
+						<Switch Name="Alive" ID="{F78DF2AC-E571-41DE-BA82-EDF4F368C866}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Battery_Life" ID="{C7AF5B94-C3DB-4EF9-8C48-F255605255B3}"/>
+						<Curve Name="" ID="{4C525DD1-0A86-4250-85DB-BDE055818B3D}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>60</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENCE_START = 3908818592U;
         static const AkUniqueID CAR_START = 2744306108U;
         static const AkUniqueID CAR_STOP = 1465464336U;
+        static const AkUniqueID LOSTBATTERY = 3613384186U;
         static const AkUniqueID MOVEMENT_STEPPLAYER = 1471192828U;
         static const AkUniqueID MOVEMENT_STEPPLAYER_STOP = 1156346507U;
         static const AkUniqueID TAKEPHONE_IN = 3848997754U;
@@ -26,6 +27,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace BATTERY_DEAD
+        {
+            static const AkUniqueID GROUP = 1226663785U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ALIVE = 655265632U;
+                static const AkUniqueID DEAD = 2044049779U;
+            } // namespace SWITCH
+        } // namespace BATTERY_DEAD
+
         namespace CAR_VARIATION
         {
             static const AkUniqueID GROUP = 312891615U;
