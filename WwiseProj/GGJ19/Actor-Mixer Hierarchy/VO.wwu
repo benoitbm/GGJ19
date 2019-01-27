@@ -15,11 +15,6 @@
 					<ChildrenList>
 						<Sound Name="Narrator_Intro" ID="{F6BC7C54-1C4A-49C0-96A4-A191E837D9C4}" ShortID="125877377">
 							<PropertyList>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>

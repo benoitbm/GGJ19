@@ -7,8 +7,10 @@ using Audio_Wwise;
 public class Footsteps : MonoBehaviour
 {
     public float footStepSpeed = 0.5f;
-    float timer = 0;
+    float timerstep = 0;
+    float timerLine = 0;
     bool playOnce = false;
+    float lineFrequency = 120.0f;
     // Start is called before the first frame update
     RigidbodyFirstPersonController rigidbodyFirstPersonController;
     void Start()
@@ -21,19 +23,32 @@ public class Footsteps : MonoBehaviour
     {
         if (rigidbodyFirstPersonController.Velocity.magnitude > 0 )
         {
-            if(timer > footStepSpeed)
+            if(timerstep > footStepSpeed)
             {
                 if (playOnce == true)
                 {
                     playOnce = false;
                 }
                 AudioMaster.Instance.PlaySound("Movement_StepPlayer", gameObject);
-                timer = 0;
+                timerstep = 0;
             }
             else
             {
-                timer += Time.deltaTime;
+                timerstep += Time.deltaTime;
             }
+
+            if(timerLine > lineFrequency)
+            {
+                timerLine = 0;
+                AudioMaster.Instance.PlaySound("Wonder", gameObject);
+            }
+            else
+            {
+                timerLine += Time.deltaTime;
+
+            }
+
+
             
         }
         else
@@ -43,8 +58,8 @@ public class Footsteps : MonoBehaviour
                 AudioMaster.Instance.PlaySound("Movement_StepPlayer_Stop", gameObject);
                 playOnce = true;
             }
-            
-            timer = 0;
+
+            timerstep = 0;
         }
 
     }

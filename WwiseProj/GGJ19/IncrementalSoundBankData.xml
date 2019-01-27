@@ -9,12 +9,12 @@
 			</Language>
 			<Language ID="684519430">
 				<File Name="MainBank" Hash="2311738206" Timestamp="1548608012"/>
-				<File Name="VO" Hash="2034412988" Timestamp="1548612378"/>
+				<File Name="VO" Hash="1115846546" Timestamp="1548614251"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1337667627" Timestamp="1548612378"/>
+				<File Name="" Hash="621329202" Timestamp="1548614251"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -27,12 +27,12 @@
 			</Language>
 			<Language ID="684519430">
 				<File Name="MainBank" Hash="2311738206" Timestamp="1548608011"/>
-				<File Name="VO" Hash="2034412988" Timestamp="1548612378"/>
+				<File Name="VO" Hash="1115846546" Timestamp="1548614251"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2651804769" Timestamp="1548612378"/>
+				<File Name="" Hash="3892660256" Timestamp="1548614251"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

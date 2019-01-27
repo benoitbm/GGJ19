@@ -15,6 +15,9 @@ public class phoneInteraction : MonoBehaviour
     bool phoneInHand = false;
     bool stowingPhone = true;
     bool playOnece = false;
+    bool firstTimeBatteryDead = true;
+    bool firstTimeZoom = true;
+    bool firstTimeInPocket = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,12 @@ public class phoneInteraction : MonoBehaviour
                 if(m_Phone.PhoneState == phone.phoneState.empty)
                 {
                     AudioMaster.Instance.PlaySound("BatteryDead", gameObject);
+                    if(firstTimeBatteryDead)
+                    {
+                        AudioMaster.Instance.PlaySound("Narrator_BatteryDead", gameObject);
+                        firstTimeBatteryDead = false;
+                    }
+                        
                 }
                 else
                 {
@@ -55,12 +64,16 @@ public class phoneInteraction : MonoBehaviour
                 playOnece = false;
                 AudioMaster.Instance.PlaySound("TakePhone_In", gameObject);
                 m_Phone.PhonePlace = phone.ePhonePlace.inPocket;
+                if(firstTimeInPocket ==true)
+                {
+                    AudioMaster.Instance.PlaySound("Narrator_PhoneStow1st", gameObject);
+                    firstTimeInPocket = false;
+                }
             }
             else
             {               
                 if (playOnece == false)
                 {
-                    print("Wallak");
                     AudioMaster.Instance.PlaySound("TakePhone_Out", gameObject);
 
                     playOnece = true;
@@ -75,6 +88,11 @@ public class phoneInteraction : MonoBehaviour
                 {
                     currentLerpTime = 0;
                     AudioMaster.Instance.PlaySound("ZoomPhoneIn", gameObject); 
+                    if(firstTimeZoom == true)
+                    {
+                        AudioMaster.Instance.PlaySound("Narrator_Phone1st", gameObject);
+                        firstTimeZoom = false;
+                    }
                 }
                     
 

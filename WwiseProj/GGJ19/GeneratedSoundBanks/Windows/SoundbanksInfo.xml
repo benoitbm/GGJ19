@@ -9,10 +9,6 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
-		<File Id="241243973" Language="English(US)">
-			<ShortName>Narrator_Intro_01.wav</ShortName>
-			<Path>Voices\English(US)\Narrator_Intro_01_56D34C19.wem</Path>
-		</File>
 		<File Id="259234071" Language="SFX">
 			<ShortName>Car\Car3_Loop.wav</ShortName>
 			<Path>SFX\Car\Car3_Loop_7A45DEA7.wem</Path>
@@ -46,11 +42,106 @@
 			<ShortName>VO</ShortName>
 			<Path>English(US)\VO.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3713458810" Name="Narrator_BatteryDead" ObjectPath="\Events\VO\Narrator_BatteryDead"/>
+				<Event Id="4054660981" Name="Narrator_DrinkBig" ObjectPath="\Events\VO\Narrator_DrinkBig"/>
+				<Event Id="4065662832" Name="Narrator_EnterBar" ObjectPath="\Events\VO\Narrator_EnterBar"/>
+				<Event Id="333407595" Name="Narrator_EnterBar_PhoneDead" ObjectPath="\Events\VO\Narrator_EnterBar_PhoneDead"/>
+				<Event Id="2998977565" Name="Narrator_Intro" ObjectPath="\Events\VO\Narrator_Intro"/>
+				<Event Id="3867458530" Name="Narrator_Lose" ObjectPath="\Events\VO\Narrator_Lose"/>
+				<Event Id="587452693" Name="Narrator_Phone1st" ObjectPath="\Events\VO\Narrator_Phone1st"/>
+				<Event Id="1035786774" Name="Narrator_Phone_Charged" ObjectPath="\Events\VO\Narrator_Phone_Charged"/>
+				<Event Id="3013971272" Name="Narrator_PhoneStow1st" ObjectPath="\Events\VO\Narrator_PhoneStow1st"/>
+				<Event Id="141622556" Name="Narrator_SmallDrink" ObjectPath="\Events\VO\Narrator_SmallDrink"/>
 				<Event Id="4264743395" Name="Narrator_Start" ObjectPath="\Events\VO\Narrator_Start"/>
+				<Event Id="4015453305" Name="Narrator_Win" ObjectPath="\Events\VO\Narrator_Win"/>
+				<Event Id="238620888" Name="Narrator_Wonder" ObjectPath="\Events\VO\Narrator_Wonder"/>
 			</IncludedEvents>
-			<ReferencedStreamedFiles>
-				<File Id="241243973"/>
-			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="41462748" Language="English(US)">
+					<ShortName>Narrator_SmallDrink_02.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_SmallDrink_02_56D34C19.wem</Path>
+				</File>
+				<File Id="228219342" Language="English(US)">
+					<ShortName>Narrator_PhoneStow1st_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_PhoneStow1st_01_56D34C19.wem</Path>
+				</File>
+				<File Id="241243973" Language="English(US)">
+					<ShortName>Narrator_Intro_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_Intro_01_56D34C19.wem</Path>
+				</File>
+				<File Id="243394978" Language="English(US)">
+					<ShortName>Narrator_DrinkBig_03.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_DrinkBig_03_56D34C19.wem</Path>
+				</File>
+				<File Id="320802618" Language="English(US)">
+					<ShortName>Narrator_BarEnter_03.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_BarEnter_03_56D34C19.wem</Path>
+				</File>
+				<File Id="326884074" Language="English(US)">
+					<ShortName>Narrator_SmallDrink_03.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_SmallDrink_03_56D34C19.wem</Path>
+				</File>
+				<File Id="335034425" Language="English(US)">
+					<ShortName>Narrator_Win_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_Win_01_56D34C19.wem</Path>
+				</File>
+				<File Id="335107223" Language="English(US)">
+					<ShortName>Narrator_Wonder_02.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_Wonder_02_56D34C19.wem</Path>
+				</File>
+				<File Id="337059694" Language="English(US)">
+					<ShortName>Narrator_BatteryDead_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_BatteryDead_01_56D34C19.wem</Path>
+				</File>
+				<File Id="359930847" Language="English(US)">
+					<ShortName>Narrator_Wonder_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_Wonder_01_56D34C19.wem</Path>
+				</File>
+				<File Id="368912641" Language="English(US)">
+					<ShortName>Narrator_Wonder_04.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_Wonder_04_56D34C19.wem</Path>
+				</File>
+				<File Id="395791143" Language="English(US)">
+					<ShortName>Narrator_Wonder_03.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_Wonder_03_56D34C19.wem</Path>
+				</File>
+				<File Id="581769929" Language="English(US)">
+					<ShortName>Narrator_BarEnterPhoneDead_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_BarEnterPhoneDead_01_56D34C19.wem</Path>
+				</File>
+				<File Id="651330543" Language="English(US)">
+					<ShortName>Narrator_DrinkBig_02.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_DrinkBig_02_56D34C19.wem</Path>
+				</File>
+				<File Id="654934812" Language="English(US)">
+					<ShortName>Narrator_Phone Charged_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_Phone Charged_01_56D34C19.wem</Path>
+				</File>
+				<File Id="700583483" Language="English(US)">
+					<ShortName>Narrator_Phone1_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_Phone1_01_56D34C19.wem</Path>
+				</File>
+				<File Id="739997533" Language="English(US)">
+					<ShortName>Narrator_BarEnter_02.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_BarEnter_02_56D34C19.wem</Path>
+				</File>
+				<File Id="815504806" Language="English(US)">
+					<ShortName>Narrator_SmallDrink_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_SmallDrink_01_56D34C19.wem</Path>
+				</File>
+				<File Id="818299128" Language="English(US)">
+					<ShortName>Narrator_DrinkBig_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_DrinkBig_01_56D34C19.wem</Path>
+				</File>
+				<File Id="900734338" Language="English(US)">
+					<ShortName>Narrator_Lose_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_Lose_01_56D34C19.wem</Path>
+				</File>
+				<File Id="949425456" Language="English(US)">
+					<ShortName>Narrator_BarEnter_01.wav</ShortName>
+					<Path>Voices\English(US)\Narrator_BarEnter_01_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="2880737896" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainBank</ObjectPath>

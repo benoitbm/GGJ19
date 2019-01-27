@@ -1,6 +1,48 @@
 Event	ID	Name			Wwise Object Path	Notes
+	141622556	Narrator_SmallDrink			\VO\Narrator_SmallDrink	
+	238620888	Narrator_Wonder			\VO\Narrator_Wonder	
+	333407595	Narrator_EnterBar_PhoneDead			\VO\Narrator_EnterBar_PhoneDead	
+	587452693	Narrator_Phone1st			\VO\Narrator_Phone1st	
+	1035786774	Narrator_Phone_Charged			\VO\Narrator_Phone_Charged	
+	2998977565	Narrator_Intro			\VO\Narrator_Intro	
+	3013971272	Narrator_PhoneStow1st			\VO\Narrator_PhoneStow1st	
+	3713458810	Narrator_BatteryDead			\VO\Narrator_BatteryDead	
+	3867458530	Narrator_Lose			\VO\Narrator_Lose	
+	4015453305	Narrator_Win			\VO\Narrator_Win	
+	4054660981	Narrator_DrinkBig			\VO\Narrator_DrinkBig	
+	4065662832	Narrator_EnterBar			\VO\Narrator_EnterBar	
 	4264743395	Narrator_Start			\VO\Narrator_Start	
 
-Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	241243973	Narrator_Intro	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Intro_01_56D34C19.wem	241243973.wem	\Actor-Mixer Hierarchy\VO\VO_Master\Narrator_Intro	
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1226663785	Battery_Dead			\Default Work Unit\Battery_Dead	
+
+Switch	ID	Name	Switch Group			Notes
+	655265632	Alive	Battery_Dead			
+	2044049779	Dead	Battery_Dead			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2337050305	Battery_Life			\Default Work Unit\Battery_Life	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	41462748	Narrator_SmallDrink_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_SmallDrink_02_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\SmallDrink\Narrator_SmallDrink_02		384064
+	228219342	Narrator_PhoneStow1st	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_PhoneStow1st_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Narrator_PhoneStow1st		648064
+	241243973	Narrator_Intro	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Intro_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Narrator_Intro		2016064
+	243394978	Narrator_DrinkBig_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_DrinkBig_03_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\DrinkBig\Narrator_DrinkBig_03		600064
+	320802618	Narrator_BarEnter_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_BarEnter_03_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\EnterBar\EnterBar\Narrator_BarEnter_03		384064
+	326884074	Narrator_SmallDrink_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_SmallDrink_03_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\SmallDrink\Narrator_SmallDrink_03		480064
+	335034425	Narrator_Win	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Win_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Narrator_Win		1632064
+	335107223	Narrator_Wonder_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Wonder_02_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Wonder\Narrator_Wonder_02		456064
+	337059694	Narrator_BatteryDead	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_BatteryDead_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Narrator_BatteryDead		936064
+	359930847	Narrator_Wonder_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Wonder_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Wonder\Narrator_Wonder_01		432064
+	368912641	Narrator_Wonder_04	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Wonder_04_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Wonder\Narrator_Wonder_04		1056064
+	395791143	Narrator_Wonder_03	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Wonder_03_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Wonder\Narrator_Wonder_03		672064
+	581769929	Narrator_BarEnterPhoneDead_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_BarEnterPhoneDead_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\EnterBar\EnterBar_PhoneDead\Narrator_BarEnterPhoneDead_01		1296064
+	651330543	Narrator_DrinkBig_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_DrinkBig_02_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\DrinkBig\Narrator_DrinkBig_02		432064
+	654934812	Narrator_Phone Charged	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Phone Charged_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Narrator_Phone Charged		672064
+	700583483	Narrator_Phone1st	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Phone1_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Narrator_Phone1st		960064
+	739997533	Narrator_BarEnter_02	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_BarEnter_02_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\EnterBar\EnterBar\Narrator_BarEnter_02		444064
+	815504806	Narrator_SmallDrink_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_SmallDrink_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\SmallDrink\Narrator_SmallDrink_01		384064
+	818299128	Narrator_DrinkBig_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_DrinkBig_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\DrinkBig\Narrator_DrinkBig_01		768064
+	900734338	Narrator_Lose	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_Lose_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\Narrator_Lose		1824064
+	949425456	Narrator_BarEnter_01	D:\BIT\GGJ19\UnityProjGGJ19\WwiseProj\GGJ19\.cache\Windows\Voices\English(US)\Narrator_BarEnter_01_56D34C19.wem		\Actor-Mixer Hierarchy\VO\VO_Master\EnterBar\EnterBar\Narrator_BarEnter_01		528064
 

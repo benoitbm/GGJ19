@@ -35,6 +35,10 @@ public class phone : MonoBehaviour
     float remainingBattery;
     float maximumBattery;
     phoneState batteryState;
+    public phoneState BatteryState
+    {
+        get { return batteryState; }
+    }
     private bool playOnce = false;
     ePhonePlace phonePlace = ePhonePlace.inPocket;
     private bool m_InBar = false;

@@ -16,7 +16,8 @@ public class bar : MonoBehaviour
     [SerializeField] Vector2Int drinksRange = new Vector2Int(3, 5);
     private int drinksAllowed;
     private int drinksUsed = 0;
-
+    bool firstTimeEnterNoBattery = false;
+    bool firstTimeChangeBar = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +41,19 @@ public class bar : MonoBehaviour
             GetComponent<BoxCollider>().enabled = false;
             StartCoroutine(fadeImage(false));
             AudioMaster.Instance.PlaySound("BarEnter");
+
+            if(p_Phone.BatteryState == phone.phoneState.empty )
+            {
+                if(firstTimeEnterNoBattery == false)
+                {
+                    AudioMaster.Instance.PlaySound("Narrator_EnterBar_PhoneDead");
+                    firstTimeEnterNoBattery = true;
+                }
+                else
+                {
+                    AudioMaster.Instance.PlaySound("Narrator_EnterBar");
+                }
+            }
 
 
             //m_UIBar.SetActive(true);
@@ -66,6 +80,25 @@ public class bar : MonoBehaviour
         AudioMaster.Instance.PlaySound("BarLeave");
         m_UIBar.SetActive(false);
         StartCoroutine(fadeImage(true));
+        if (drinksUsed > 0 )
+        {
+            if(firstTimeChangeBar == false)
+            {
+                AudioMaster.Instance.PlaySound("Narrator_Phone_Charged");
+                firstTimeChangeBar = true;
+            }
+            else
+            {
+                if (drinksUsed >= 2)
+                {
+                    AudioMaster.Instance.PlaySound("Narrator_DrinkBig");
+                }
+                else
+                {
+                    AudioMaster.Instance.PlaySound("Narrator_SmallDrink");
+                }
+            }
+        }
         //Recapture
     }
 

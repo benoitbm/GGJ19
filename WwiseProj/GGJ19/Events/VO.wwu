@@ -5,6 +5,18 @@
 			<ChildrenList>
 				<Event Name="Narrator_Start" ID="{9B7C0F95-246C-45F6-86EF-407305152479}">
 					<ChildrenList>
+						<Action Name="" ID="{745AC432-36D1-4152-A1F0-C3C1FA081BA0}" ShortID="654999379">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{67B55360-E9C1-4604-9777-85309155C322}" ShortID="932336305">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -12,6 +24,316 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Narrator_Intro" ID="{F6BC7C54-1C4A-49C0-96A4-A191E837D9C4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_Win" ID="{32B4622C-D552-4A8A-9554-F37571C8B9F1}">
+					<ChildrenList>
+						<Action Name="" ID="{768706F2-53B3-47AC-8130-D3ADE1853CFA}" ShortID="419290712">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C49A9994-A1E4-46C7-9E46-4C9FFE67A262}" ShortID="359638563">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Narrator_Win" ID="{8BCE8C50-5470-44AC-9EA3-53951F61312B}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_Phone_Charged" ID="{D55BC046-CBEC-4605-9ECE-45B3CFAF2A58}">
+					<ChildrenList>
+						<Action Name="" ID="{9D473E14-702D-4B35-A335-B16A8D3433F6}" ShortID="38197520">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{24C1C5F7-E10F-455C-972C-473E6757CC2E}" ShortID="403579974">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Narrator_Phone Charged" ID="{C44CD3A6-E603-431D-BA8E-9D00CD242A97}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_Phone1st" ID="{4C01BF1E-2385-42B6-A634-CFA35957BFD2}">
+					<ChildrenList>
+						<Action Name="" ID="{BF9A57A8-3426-4573-BBA3-A2C4BD1389A8}" ShortID="1042898518">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EE82118D-F852-4F94-A449-01F958F2DC21}" ShortID="1056175770">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Narrator_Phone1st" ID="{17F9094E-62CE-4ABD-8557-6B1C7ADFD959}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_Intro" ID="{2D2C37DF-F320-4BB9-8A18-5920731FEF56}">
+					<ChildrenList>
+						<Action Name="" ID="{EF0FE616-4415-4285-A962-38469A84E8D3}" ShortID="927495649">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5FDD7D05-E757-4694-8DAD-E9C0809DA388}" ShortID="362948936">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Narrator_Intro" ID="{F6BC7C54-1C4A-49C0-96A4-A191E837D9C4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_Wonder" ID="{D0C8D424-7253-4928-9CE6-A9760B3A4305}">
+					<ChildrenList>
+						<Action Name="" ID="{BD8F7D38-B47D-44EC-8A97-A9DF250D96A6}" ShortID="912752092">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BA0FF4FE-57EF-471B-AF90-962B4EF8DB2E}" ShortID="651286950">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wonder" ID="{74CB4517-278C-401D-A7DA-D31714E3F207}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_DrinkBig" ID="{A92FEB48-492D-477C-8863-8F962AAB9167}">
+					<ChildrenList>
+						<Action Name="" ID="{A3751C10-D587-4FED-A292-2F54C9F838D2}" ShortID="215344429">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E414534F-7429-453A-A333-575A8A62D7C1}" ShortID="655283114">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DrinkBig" ID="{4390A6AC-EE7E-44EB-96A0-1BB3B9CC149D}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_BatteryDead" ID="{06393F04-57C7-4E42-836E-BEB4A50B47C3}">
+					<ChildrenList>
+						<Action Name="" ID="{F9C1CAD9-633B-47AF-9131-8F2ED5B879A2}" ShortID="342891735">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3CDD66BE-597E-412D-9B19-7FCE32F32448}" ShortID="985398992">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Narrator_BatteryDead" ID="{9FD27AF6-D551-484A-AB71-ADC1A647214D}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_PhoneStow1st" ID="{AA8EAE0D-687C-4119-9814-72D76C2F7404}">
+					<ChildrenList>
+						<Action Name="" ID="{E67378D7-E585-4B65-88F6-AC3B781BCA0E}" ShortID="421814922">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8A9983CE-E2A4-4DC2-BB11-79AE4ADF943C}" ShortID="10514969">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Narrator_PhoneStow1st" ID="{4D75919A-0D4F-4B82-B05B-AC65E7752FE1}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DAC0D153-8202-42F8-A3DE-83099BFDF4A9}" ShortID="840464577">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Game" ID="{1D7DC8F8-B455-4658-8D6B-8EE3C991A65C}" WorkUnitID="{87662CD3-FBEC-4FA9-9D1A-84204E0E1CB6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_EnterBar" ID="{782F9863-0C64-437C-ACB8-5F5B15F0F162}">
+					<ChildrenList>
+						<Action Name="" ID="{AE7BFB6C-6870-4C4D-9660-52C34B8F08CE}" ShortID="611385344">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C8B19900-489A-4ED3-8308-F3A6FD8D64B5}" ShortID="738586909">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnterBar" ID="{47C5C7CC-9499-4792-9AE5-E39762AC69E5}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_SmallDrink" ID="{7CE8686B-D8CE-47C2-8D80-B888EA855FB3}">
+					<ChildrenList>
+						<Action Name="" ID="{242C1326-8936-4F9B-B4D0-1CD6DF7C1973}" ShortID="518476685">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F4C8C687-0131-49D8-802D-A73DA89A458A}" ShortID="840331595">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SmallDrink" ID="{81EDB97A-3394-4D1E-8A42-CD0A45BA46CF}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_Lose" ID="{94984B49-3BA2-41CA-B473-EE0DDEBEC199}">
+					<ChildrenList>
+						<Action Name="" ID="{7B8E2052-2FEA-4C56-A7E0-55DD6BCAA8E8}" ShortID="301930739">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VO_Master" ID="{A8F18ED9-C1CA-486A-820E-95547A038BE4}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D7DB1193-D45F-4642-93DD-D1B68CB09127}" ShortID="128826222">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Narrator_Lose" ID="{A62A84A3-C58B-4DCA-BCD8-C47B7738D56E}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Narrator_EnterBar_PhoneDead" ID="{14245763-229F-4666-AF0B-DA25DDD808A8}">
+					<ChildrenList>
+						<Action Name="" ID="{511BAF5B-6B75-44F9-B785-D8CB04686EF4}" ShortID="729095761">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnterBar_PhoneDead" ID="{3BBE0B4B-8DC6-4006-A69F-CD7DB94DDC19}" WorkUnitID="{06E35053-96CD-4BFA-8763-D01E93F33E71}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
